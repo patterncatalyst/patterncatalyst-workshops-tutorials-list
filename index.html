@@ -1,0 +1,51 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Workshops · Tutorials · Reference Architectures</span>
+    <h1 class="hero__title">{{ site.title }}</h1>
+    <p class="hero__lead">{{ site.description }}</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary"
+         href="https://github.com/patterncatalyst"
+         rel="noopener">Browse on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+{%- comment -%}
+  Data-driven homepage: loop site.data.sites.groups in order, then for each
+  group render a section of cards for the matching entries in
+  site.data.sites.entries. Adding a new workshop/tutorial means adding one
+  entry to _data/sites.yml — this page never needs hand-written cards.
+{%- endcomment -%}
+{% for group in site.data.sites.groups %}
+{% assign group_entries = site.data.sites.entries | where: "group", group %}
+{% if group_entries.size > 0 %}
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">{{ group }}</h2>
+    <div class="cards">
+      {% for entry in group_entries %}
+      <div class="card">
+        <h3 class="card__title">{{ entry.title }}</h3>
+        <p class="card__desc">{{ entry.synopsis }}</p>
+        {% if entry.note %}
+        <p class="card__desc" style="font-style: italic; flex-grow: 0;">{{ entry.note }}</p>
+        {% endif %}
+        <div class="card__meta">
+          {% if entry.site_url %}
+          <a href="{{ entry.site_url }}" rel="noopener">Visit site →</a>
+          {% endif %}
+          <a href="{{ entry.repo_url }}" rel="noopener">Source ↗</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endfor %}

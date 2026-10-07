@@ -1,0 +1,127 @@
+# Catalog of PatternCatalyst workshops, tutorials, and reference projects.
+# Rendered by index.html as a grouped card grid, iterating `groups` in order
+# and filtering `entries` by each entry's `group` field.
+#
+# Fields per entry:
+#   slug      - repo name under github.com/patterncatalyst/<slug>
+#   title     - card title (quoted: contains colons)
+#   group     - must match one of the `groups` names below, exactly
+#   synopsis  - card description (quoted: contains colons)
+#   site_url  - published GitHub Pages URL, or null if there is no public site
+#   repo_url  - source repo (always present)
+#   note      - optional short note shown when site_url is null
+
+groups:
+  - "Cloud-Native & Kubernetes"
+  - "DDD & Integration"
+  - "Performance & Optimization"
+  - "Systems Programming"
+  - "Other"
+
+entries:
+  - slug: "datamesh-reference-arch-quarkus"
+    title: "Data Mesh Reference Architecture · Quarkus"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "A working data-mesh reference implementation in Quarkus: services across REST, gRPC, GraphQL, and Kafka, backed by Camel-on-Quarkus routes and langchain4j/MCP tooling, with contracts, a catalog, progressive delivery, autoscaling, and full observability. Includes a runnable Spring Boot twin for side-by-side comparison."
+    site_url: "https://patterncatalyst.github.io/datamesh-reference-arch-quarkus/"
+    repo_url: "https://github.com/patterncatalyst/datamesh-reference-arch-quarkus"
+
+  - slug: "datamesh-reference-arch-python"
+    title: "Data Mesh Reference Architecture · Python"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "The Python twin of the data-mesh reference architecture: REST, gRPC, GraphQL, and Kafka services deployed via Helm, with contracts, a catalog, progressive delivery, autoscaling, and full observability."
+    site_url: "https://patterncatalyst.github.io/datamesh-reference-arch-python/"
+    repo_url: "https://github.com/patterncatalyst/datamesh-reference-arch-python"
+
+  - slug: "cloud-native-design-patterns"
+    title: "Cloud-Native Design Patterns"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "A chaptered guide to designing cloud-native APIs: patterns, anti-patterns, and runnable examples in Spring Boot, Quarkus, .NET, Python, C++, and Go."
+    site_url: "https://patterncatalyst.github.io/cloud-native-design-patterns/"
+    repo_url: "https://github.com/patterncatalyst/cloud-native-design-patterns"
+
+  - slug: "minikube-on-fedora"
+    title: "Minikube Tutorial on Fedora"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "Install and use minikube on Fedora 44 with kubectl and Helm."
+    site_url: "https://patterncatalyst.github.io/minikube-on-fedora/"
+    repo_url: "https://github.com/patterncatalyst/minikube-on-fedora"
+
+  - slug: "domain-driven-design-observability-workshop"
+    title: "Building Observable Domains"
+    group: "DDD & Integration"
+    synopsis: "A hands-on Domain-Driven Design and OpenTelemetry workshop across Quarkus, Python, and C#."
+    site_url: "https://patterncatalyst.github.io/domain-driven-design-observability-workshop/"
+    repo_url: "https://github.com/patterncatalyst/domain-driven-design-observability-workshop"
+
+  - slug: "modernizing-enterprise-applications"
+    title: "Modernizing Enterprise Applications"
+    group: "DDD & Integration"
+    synopsis: "A Spring Boot monolith strangled to Quarkus + Camel microservices, one seam at a time, driven by an AI Development Lifecycle (ADLC) and tested throughout."
+    site_url: "https://patterncatalyst.github.io/modernizing-enterprise-applications/"
+    repo_url: "https://github.com/patterncatalyst/modernizing-enterprise-applications"
+
+  - slug: "enterprise-integration-patterns-with-camel"
+    title: "Enterprise Integration Patterns with Apache Camel"
+    group: "DDD & Integration"
+    synopsis: "A comprehensive guide to the 65 Enterprise Integration Patterns, implemented with Apache Camel on three runtimes (Quarkus, Spring Boot, YAML DSL), backed by Kafka, Pulsar, and Redis, with runnable Podman examples."
+    site_url: "https://patterncatalyst.github.io/enterprise-integration-patterns-with-camel/"
+    repo_url: "https://github.com/patterncatalyst/enterprise-integration-patterns-with-camel"
+
+  - slug: "quarkus-optimization"
+    title: "Taming the JVM · Quarkus"
+    group: "Performance & Optimization"
+    synopsis: "Optimizing Java (Quarkus) workloads on OpenShift and Kubernetes — GC, memory, and rightsizing under container limits."
+    site_url: "https://patterncatalyst.github.io/quarkus-optimization/"
+    repo_url: "https://github.com/patterncatalyst/quarkus-optimization"
+
+  - slug: "spring-boot-optimization"
+    title: "Taming the JVM · Spring Boot"
+    group: "Performance & Optimization"
+    synopsis: "Optimizing Spring Boot workloads on OpenShift and Kubernetes — GC, memory, and rightsizing under container limits."
+    site_url: "https://patterncatalyst.github.io/spring-boot-optimization/"
+    repo_url: "https://github.com/patterncatalyst/spring-boot-optimization"
+
+  - slug: "cpp-container-optimization-tutorial"
+    title: "Optimizing Modern C++ with Containers"
+    group: "Performance & Optimization"
+    synopsis: "A presentation, a companion Jekyll site, and six runnable Podman demos teaching modern-C++ performance work inside rootless OCI containers, end-to-end on Fedora 44."
+    site_url: "https://patterncatalyst.github.io/cpp-container-optimization-tutorial/"
+    repo_url: "https://github.com/patterncatalyst/cpp-container-optimization-tutorial"
+
+  - slug: "ebpf-with-aya"
+    title: "eBPF with Aya on Fedora"
+    group: "Systems Programming"
+    synopsis: "Write eBPF programs in Rust with Aya, deploy them to a Fedora 44 KVM lab, and visualize the output in Grafana via OpenTelemetry."
+    site_url: "https://patterncatalyst.github.io/ebpf-with-aya/"
+    repo_url: "https://github.com/patterncatalyst/ebpf-with-aya"
+
+  - slug: "linux-systems-programming"
+    title: "Linux Systems Programming"
+    group: "Systems Programming"
+    synopsis: "A chaptered guide to Linux systems programming in modern C++, Go, and Rust: processes, I/O, memory, IPC, networking, concurrency, debugging, containers, and observability, with runnable examples in all three languages."
+    site_url: "https://patterncatalyst.github.io/linux-systems-programming/"
+    repo_url: "https://github.com/patterncatalyst/linux-systems-programming"
+
+  - slug: "lgtm-skills"
+    title: "LGTM Skills"
+    group: "Other"
+    synopsis: "The source-of-truth collection of lgtm-* Claude Skills encoding house conventions for themed diagrams, Jekyll docs sites, Red Hat-branded decks, local and Kubernetes observability stacks, and the git/release workflow."
+    site_url: null
+    repo_url: "https://github.com/patterncatalyst/lgtm-skills"
+    note: "private — source-of-truth repo, no public site"
+
+  - slug: "hummingbird-tutorial"
+    title: "Hummingbird Tutorial"
+    group: "Other"
+    synopsis: "A follow-along, cut-and-paste tutorial for Red Hat Project Hummingbird — minimal, hardened, near-zero-CVE container images — using Podman, Podman Compose, and Podman Desktop on Fedora 44 or macOS."
+    site_url: "https://patterncatalyst.github.io/hummingbird-tutorial/"
+    repo_url: "https://github.com/patterncatalyst/hummingbird-tutorial"
+
+  - slug: "coloringbooks"
+    title: "Coloring Books"
+    group: "Other"
+    synopsis: "Three container-themed coloring books — Container Commandos, the Red Hat Container Coloring Book, and an SELinux coloring book — as printable PDFs."
+    site_url: null
+    repo_url: "https://github.com/patterncatalyst/coloringbooks"
+    note: "PDF downloads — no site"

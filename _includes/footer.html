@@ -1,0 +1,31 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>{{ site.title | default: "PatternCatalyst" }}</h4>
+        <p>{{ site.description | default: "Workshops and tutorials from PatternCatalyst." }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Browse</h4>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Workshops</a></li>
+          <li><a href="{{ '/blogs/' | relative_url }}">Our Blogs</a></li>
+          <li><a href="{{ '/blog-links/' | relative_url }}">Blog Links</a></li>
+          <li><a href="{{ '/books/' | relative_url }}">Books</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reference</h4>
+        <ul>
+          <li><a href="https://github.com/patterncatalyst" rel="noopener">PatternCatalyst on GitHub ↗</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" rel="noopener">View this site's source ↗</a></li>
+          <li><a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/issues" rel="noopener">Issues ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>Open source · {{ site.license | default: "Apache 2.0" }}</span>
+      <span>Last built {{ site.time | date: "%Y-%m-%d" }}</span>
+    </div>
+  </div>
+</footer>

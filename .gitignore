@@ -1,0 +1,14 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store

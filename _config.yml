@@ -1,0 +1,46 @@
+# ────────────────────────────────────────────────────────────────────────────
+# Project: patterncatalyst-workshops-tutorials-list
+# Site identity, GitHub link target, and baseurl. Build configuration below
+# generally doesn't need changes.
+# ────────────────────────────────────────────────────────────────────────────
+
+# Site identity
+title: "PatternCatalyst Workshops and Tutorials"
+description: "A catalog of hands-on workshops, tutorials, and reference architectures from PatternCatalyst."
+brand_emoji: "🧭"   # Single emoji that appears next to the title in the header
+
+# GitHub identity for header link and example sourcing
+github_username: "patterncatalyst"
+github_repo: "patterncatalyst-workshops-tutorials-list"
+
+# baseurl
+# - On user/org Pages site (USERNAME.github.io): set to ""
+# - On project Pages site (USERNAME.github.io/PROJECT): set to "/PROJECT"
+# - For local dev override at runtime: bundle exec jekyll serve --baseurl ""
+baseurl: "/patterncatalyst-workshops-tutorials-list"
+
+# url is set at deploy time; leave blank for GitHub Pages auto-detection
+url: "https://patterncatalyst.github.io"
+
+license: "Apache 2.0"
+
+# ────────────────────────────────────────────────────────────────────────────
+# Build configuration — generally don't change these.
+# ────────────────────────────────────────────────────────────────────────────
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+
+# Files that Jekyll should not process or include in the built site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - scripts/
+  - README.md
+  - LICENSE
