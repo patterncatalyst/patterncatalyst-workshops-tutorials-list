@@ -29,5 +29,16 @@
 #     tags: ["quarkus", "kubernetes", "datamesh"]
 #     source_project: "datamesh-quarkus"
 #
-# Keep the list below empty until the blog publishing project is real —
-# blogs.html renders a friendly empty state when there are no entries.
+# blogs.html renders a friendly empty state when the list below is empty.
+# ─────────────────────────────────────────────────────────────────────────
+
+- title: "L7 Routing Is a Four-Layer Decision Chain, Not an Appliance in a Rack"
+  date: "2026-10-07"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/07/l7-routing-for-cloud-native-apps/"
+  blurb: >
+    L7 routing in 2026 isn't a box in a rack — it's layered software (edge,
+    gateway, mesh, app) making a decision on every HTTP and gRPC envelope,
+    and knowing which layer owns which decision is the whole game.
+  tags: ["cloud-native", "l7-routing", "kubernetes", "api-gateway", "service-mesh"]
+  source_project: "cloud-native-design-patterns"
