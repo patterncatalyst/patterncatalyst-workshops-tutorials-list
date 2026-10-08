@@ -34,9 +34,16 @@
 - name: "Cloud-Native, Microservices & Containers"
   books:
     - "Monolith to Microservices"
+    - "Building Microservices"
     - "Optimizing Cloud Native Java"
     - "SRE with Java Microservices"
     - "Container Security"
+
+- name: "Observability & Reliability"
+  books:
+    - "Observability Engineering"
+    - "Site Reliability Engineering"
+    - "Building Resilient Distributed Systems"
 
 - name: "C++ & Performance"
   books:

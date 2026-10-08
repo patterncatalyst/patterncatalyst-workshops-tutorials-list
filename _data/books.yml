@@ -51,6 +51,26 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
 
+- title: "Building Microservices"
+  authors: "Sam Newman"
+  publisher: "O'Reilly"
+  year: 2021
+  isbn: "9781492034025"
+  url: "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
+  review_note: "2nd Edition (subtitle: Designing Fine-Grained Systems), published 2021. Print ISBN 9781492034025 (confirmed via Biblio/AbeBooks/eBay listings) differs from the O'Reilly product-page ebook ISBN 9781492034018 — same book, different format, consistent with this catalog's existing print/ebook ISBN convention (see Optimizing Cloud Native Java, SRE with Java Microservices)."
+  referenced_by:
+    - "otel-observability-tutorial"
+
+- title: "Building Resilient Distributed Systems"
+  authors: "Sam Newman"
+  publisher: "O'Reilly"
+  year: 2026
+  isbn: "9781098163532"
+  url: "https://www.oreilly.com/library/view/building-resilient-distributed/9781098163532/"
+  review_note: "Full subtitle: Patterns and Practices for Stable Software. As of Oct 2026 this title is in O'Reilly early access, not yet fully published; confirmed via the author's own site (samnewman.io) and the O'Reilly product page, with print publication targeted for September 2026."
+  referenced_by:
+    - "otel-observability-tutorial"
+
 - title: "C++ High Performance"
   authors: "Andrist, B. & Sehr, V."
   publisher: "Packt"
@@ -150,6 +170,16 @@
   referenced_by:
     - "cloud-native-design-patterns"
 
+- title: "Observability Engineering"
+  authors: "Charity Majors, Liz Fong-Jones & George Miranda"
+  publisher: "O'Reilly"
+  year: 2022
+  isbn: "9781492076445"
+  url: "https://www.oreilly.com/library/view/observability-engineering/9781492076438/"
+  review_note: "This is the 1st edition (2022, three authors: Majors, Fong-Jones, Miranda). A heavily revised 2nd edition (ISBN 9781098179915) was published later adding a fourth author, Austin Parker; the 1st edition is used here to match the three-author citation this entry covers. Print ISBN 9781492076445 differs from the O'Reilly product-page ebook ISBN 9781492076438, same convention as other dual-format entries in this file."
+  referenced_by:
+    - "otel-observability-tutorial"
+
 - title: "Optimizing Cloud Native Java"
   authors: "Evans, B. J., & Gough, J."
   publisher: "O'Reilly"
@@ -181,6 +211,16 @@
   referenced_by:
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
+
+- title: "Site Reliability Engineering"
+  authors: "Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy, Charity Majors, Liz Fong-Jones & George Miranda (eds.)"
+  publisher: "O'Reilly"
+  year: 2026
+  isbn: "9798341607675"
+  url: "https://www.oreilly.com/library/view/site-reliability-engineering/9798341607675/"
+  review_note: "Full subtitle: How Google Runs Production Systems. A 2nd edition was confirmed to exist (ISBN 9798341607675), with original editors Beyer/Jones/Petoff/Murphy joined by new co-editors Charity Majors, Liz Fong-Jones & George Miranda; scheduled for publication October 27, 2026. Used here per instructions to prefer a 2nd edition when one exists, in place of the free 1st-edition (2016) text hosted at sre.google."
+  referenced_by:
+    - "otel-observability-tutorial"
 
 - title: "SRE with Java Microservices"
   authors: "Schneider, J."
