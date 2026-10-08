@@ -20,7 +20,7 @@
   url: "https://quarkus.io/blog/"
   source: "Quarkus.io"
   blurb: >
-    The official Quarkus team blog — release notes, performance deep dives,
+    The official Quarkus team blog: release notes, performance deep dives,
     and extension guides straight from the project maintainers.
   tags: ["quarkus", "java"]
 
@@ -37,5 +37,61 @@
   source: "martinfowler.com"
   blurb: >
     Long-running source for domain-driven design, software architecture,
-    and refactoring practice — foundational reading for DDD topics.
+    and refactoring practice; foundational reading for DDD topics.
+  tags: ["ddd", "architecture"]
+
+- title: "Sam Newman"
+  url: "https://samnewman.io/"
+  source: "Sam Newman"
+  blurb: >
+    Writing on microservices and service decomposition from the author of
+    "Building Microservices" and "Monolith to Microservices".
+  tags: ["microservices", "architecture"]
+
+- title: "Enterprise Integration Patterns"
+  url: "https://www.enterpriseintegrationpatterns.com/"
+  source: "Hohpe & Woolf"
+  blurb: >
+    The canonical catalog of the 65 messaging integration patterns, plus
+    Gregor Hohpe's "Ramblings" on messaging and integration.
+  tags: ["integration", "messaging", "eip"]
+
+- title: "Apache Camel Blog"
+  url: "https://camel.apache.org/blog/"
+  source: "camel.apache.org"
+  blurb: >
+    The Apache Camel project blog: releases, component updates, and
+    integration guidance from the maintainers.
+  tags: ["camel", "integration"]
+
+- title: "Red Hat Developer Blog"
+  url: "https://developers.redhat.com/blog"
+  source: "developers.redhat.com"
+  blurb: >
+    Red Hat's developer blog, covering Quarkus, Camel, OpenShift, and
+    Kubernetes with hands-on tutorials and release coverage.
+  tags: ["quarkus", "camel", "kubernetes", "openshift"]
+
+- title: "The Architect Elevator"
+  url: "https://architectelevator.com/blog/"
+  source: "Gregor Hohpe"
+  blurb: >
+    Gregor Hohpe on enterprise architecture, integration, and connecting
+    the technical and executive floors of an organization.
+  tags: ["architecture", "integration"]
+
+- title: "Domain Language"
+  url: "https://www.domainlanguage.com/"
+  source: "Eric Evans"
+  blurb: >
+    Eric Evans' site on domain-driven design, from the author of the
+    original DDD book.
+  tags: ["ddd"]
+
+- title: "Vladik Khononov"
+  url: "https://vladikk.com/"
+  source: "Vlad Khononov"
+  blurb: >
+    Writing on domain-driven design and software complexity from the author
+    of "Learning Domain-Driven Design" and "Balancing Coupling".
   tags: ["ddd", "architecture"]
