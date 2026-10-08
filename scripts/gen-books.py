@@ -48,6 +48,7 @@ ALLOWED_REPOS = [
     "lgtm-skills",
     "hummingbird-tutorial",
     "coloringbooks",
+    "helm-for-developers",
 ]
 
 # Directory fragments that disqualify a path from being scanned, even

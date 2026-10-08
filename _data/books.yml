@@ -81,6 +81,16 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
 
+- title: "Certified Kubernetes Application Developer (CKAD) Study Guide"
+  authors: "Benjamin Muschko"
+  publisher: "O'Reilly"
+  year: 2024
+  isbn: "9781098152857"
+  url: "https://www.oreilly.com/library/view/-/9781098152857/"
+  review_note: "2nd Edition, published 2024-05-22. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
+  referenced_by:
+    - "helm-for-developers"
+
 - title: "Container Security"
   authors: "Rice, L."
   publisher: "O'Reilly"
@@ -119,6 +129,26 @@
   referenced_by:
     - "domain-driven-design-observability-workshop"
 
+- title: "Effective Platform Engineering"
+  authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
+  publisher: "Manning"
+  year: 2025
+  isbn: "9781633436497"
+  url: "https://www.manning.com/books/effective-platform-engineering"
+  review_note: "Authors corrected from the extracted 'Chankramath et al.' to the full list per the O'Reilly learning platform; published 2025-10-08. Manning product page confirmed."
+  referenced_by:
+    - "helm-for-developers"
+
+- title: "GitOps and Kubernetes"
+  authors: "Billy Yuen, Alexander Matyushentsev, Todd Ekenstam, Jesse Suen"
+  publisher: "Manning"
+  year: 2021
+  isbn: "9781617297274"
+  url: "https://www.manning.com/books/gitops-and-kubernetes"
+  review_note: "Published 2021-04-19. ISBN and metadata confirmed on the O'Reilly learning platform (Manning title)."
+  referenced_by:
+    - "helm-for-developers"
+
 - title: "Implementing Domain-Driven Design"
   authors: "Vaughn Vernon"
   publisher: "Addison-Wesley"
@@ -128,6 +158,36 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
     - "domain-driven-design-observability-workshop"
+
+- title: "Kubernetes for Developers"
+  authors: "William Denniss"
+  publisher: "Manning"
+  year: 2024
+  isbn: "9781617297175"
+  url: "https://www.manning.com/books/kubernetes-for-developers"
+  review_note: "Published 2024-03-05. ISBN and metadata confirmed on the O'Reilly learning platform (Manning title)."
+  referenced_by:
+    - "helm-for-developers"
+
+- title: "Kubernetes Patterns"
+  authors: "Bilgin Ibryam, Roland Huß"
+  publisher: "O'Reilly"
+  year: 2023
+  isbn: "9781098131678"
+  url: "https://www.oreilly.com/library/view/-/9781098131678/"
+  review_note: "2nd Edition, published 2023-03-16. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
+  referenced_by:
+    - "helm-for-developers"
+
+- title: "Kubernetes: Up and Running"
+  authors: "Brendan Burns, Joe Beda, Kelsey Hightower, Lachlan Evenson"
+  publisher: "O'Reilly"
+  year: 2022
+  isbn: "9781098110192"
+  url: "https://www.oreilly.com/library/view/-/9781098110192/"
+  review_note: "3rd Edition, published 2022-08-02. Authors expanded from the extracted 'Brendan Burns et al.'. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
+  referenced_by:
+    - "helm-for-developers"
 
 - title: "Latency: Reduce delay in software systems"
   authors: "Enberg, P."
@@ -149,6 +209,26 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "domain-driven-design-observability-workshop"
+
+- title: "Learning Helm"
+  authors: "Matt Butcher, Matt Farina, Josh Dolitsky"
+  publisher: "O'Reilly"
+  year: 2021
+  isbn: "9781492083641"
+  url: "https://www.oreilly.com/library/view/-/9781492083641/"
+  review_note: "Published 2021-01-20. Authors expanded from the extracted 'Matt Butcher et al.'. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
+  referenced_by:
+    - "helm-for-developers"
+
+- title: "Managing Kubernetes Resources Using Helm"
+  authors: "Andrew Block, Austin Dewey"
+  publisher: "Packt"
+  year: 2022
+  isbn: "9781803242897"
+  url: "https://www.packtpub.com/en-us/product/managing-kubernetes-resources-using-helm-9781803242897"
+  review_note: "2nd Edition, published 2022-09-30. ISBN confirmed on the O'Reilly learning platform; the Packt page blocked automated checks, so the URL follows Packt's standard slug pattern."
+  referenced_by:
+    - "helm-for-developers"
 
 - title: "Mastering API Architecture"
   authors: "Gough, J. & Bryant, D. & Auburn, M."
@@ -190,6 +270,16 @@
   referenced_by:
     - "quarkus-optimization"
     - "spring-boot-optimization"
+
+- title: "Platform Engineering on Kubernetes"
+  authors: "Mauricio Salatino"
+  publisher: "Manning"
+  year: 2024
+  isbn: "9781617299322"
+  url: "https://www.manning.com/books/platform-engineering-on-kubernetes"
+  review_note: "Published 2024. ISBN and metadata confirmed on the O'Reilly learning platform (Manning title)."
+  referenced_by:
+    - "helm-for-developers"
 
 - title: "Principles of Web API Design"
   authors: "Higginbotham, J."

@@ -52,3 +52,15 @@
     - "Building Low Latency Applications with C++"
     - "100 C++ Mistakes and How to Avoid Them"
     - "Latency: Reduce delay in software systems"
+
+- name: "Kubernetes, Helm & Platform Engineering"
+  books:
+    - "Learning Helm"
+    - "Managing Kubernetes Resources Using Helm"
+    - "Kubernetes: Up and Running"
+    - "Kubernetes Patterns"
+    - "Kubernetes for Developers"
+    - "Certified Kubernetes Application Developer (CKAD) Study Guide"
+    - "GitOps and Kubernetes"
+    - "Platform Engineering on Kubernetes"
+    - "Effective Platform Engineering"

@@ -61,6 +61,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/minikube-on-fedora/"
     repo_url: "https://github.com/patterncatalyst/minikube-on-fedora"
 
+  - slug: "helm-for-developers"
+    title: "Helm for Developers"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "A chaptered guide to Helm 4 for application developers: chart structure, templating, values, dependencies, hooks, testing, OCI and signing, and GitOps, on minikube and OpenShift, with runnable examples and Helm 101 and 201 decks."
+    site_url: "https://patterncatalyst.github.io/helm-for-developers/"
+    repo_url: "https://github.com/patterncatalyst/helm-for-developers"
+
   - slug: "domain-driven-design-observability-workshop"
     title: "Building Observable Domains"
     group: "DDD & Integration"
