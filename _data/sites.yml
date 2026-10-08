@@ -64,7 +64,7 @@ entries:
   - slug: "helm-for-developers"
     title: "Helm for Developers"
     group: "Cloud-Native & Kubernetes"
-    synopsis: "A chaptered guide to Helm for application developers: chart structure, templating, values, dependencies, testing, hooks, and releases, with runnable examples."
+    synopsis: "A chaptered guide to Helm 4 for application developers: chart structure, templating, values, dependencies, hooks, testing, OCI and signing, and GitOps, on minikube and OpenShift, with runnable examples and Helm 101 and 201 decks."
     site_url: null
     repo_url: "https://github.com/patterncatalyst/helm-for-developers"
     note: "site publishing pending"
