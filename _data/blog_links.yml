@@ -95,3 +95,11 @@
     Writing on domain-driven design and software complexity from the author
     of "Learning Domain-Driven Design" and "Balancing Coupling".
   tags: ["ddd", "architecture"]
+
+- title: "Modernes C++"
+  url: "https://www.modernescpp.com/"
+  source: "Rainer Grimm"
+  blurb: >
+    Rainer Grimm's blog on modern C++: concurrency, templates, the memory
+    model, and the latest standard features with runnable examples.
+  tags: ["cpp", "performance"]
