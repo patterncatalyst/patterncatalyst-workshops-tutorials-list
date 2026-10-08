@@ -59,6 +59,9 @@ EXCLUDE_FRAGMENTS = (
     "/vendor/",
     "/.git/",
     "/optimizing-java/",
+    "/_plans/",      # planning notes and evidence, not reader-facing citations
+    "/.tools/",      # project-local toolchains (third-party docs)
+    "/.venv/",
 )
 
 SCAN_SUFFIXES = (".md", ".adoc")
