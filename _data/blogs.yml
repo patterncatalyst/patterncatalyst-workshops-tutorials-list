@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Our Blogs — data source for /blogs/ (blogs.html)
+#
+# This lists blog posts that are written FROM the workshop/tutorial material
+# in this catalog. The posts themselves live in a separate blog project
+# whose publishing format and repo are still TBD — this page only links
+# out to them once that project exists and posts are published.
+#
+# Schema (one list item per post):
+#   - title:          string, required  — post headline
+#     date:            string, required  — ISO date, "YYYY-MM-DD"
+#     author:          string, required  — author name
+#     url:             string, required  — full URL to the published post
+#     blurb:           string, required  — 1-2 sentence summary
+#     tags:            list of strings, optional
+#     source_project:  string, optional  — slug of the originating repo
+#                      (e.g. the workshop/tutorial repo this post is drawn
+#                      from)
+#
+# Example (commented out — do not uncomment until a real post exists):
+#
+#   - title: "Five Things We Learned Building a Datamesh on Quarkus"
+#     date: "2026-01-15"
+#     author: "PatternCatalyst"
+#     url: "https://blog.example.com/datamesh-quarkus-lessons"
+#     blurb: >
+#       Lessons from turning a Quarkus + Kubernetes datamesh workshop into
+#       a production-style reference architecture.
+#     tags: ["quarkus", "kubernetes", "datamesh"]
+#     source_project: "datamesh-quarkus"
+#
+# Keep the list below empty until the blog publishing project is real —
+# blogs.html renders a friendly empty state when there are no entries.

@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Blog Links — data source for /blog-links/ (blog-links.html)
+#
+# Curated external blogs/articles we reference while building these
+# workshops and tutorials. These are NOT our own posts (see _data/blogs.yml
+# for that) — they're third-party reading relevant to our topics.
+#
+# Schema (one list item per entry):
+#   - title:  string, required — article/post title
+#     url:    string, required — full URL to the article
+#     source: string, required — publishing site or author name
+#     blurb:  string, required — 1-2 sentence summary of why it's relevant
+#     tags:   list of strings, optional
+#
+# Quote any value that contains a colon (YAML parses `key: value` inside an
+# unquoted scalar as a nested mapping).
+# ─────────────────────────────────────────────────────────────────────────
+
+- title: "Quarkus Blog"
+  url: "https://quarkus.io/blog/"
+  source: "Quarkus.io"
+  blurb: >
+    The official Quarkus team blog — release notes, performance deep dives,
+    and extension guides straight from the project maintainers.
+  tags: ["quarkus", "java"]
+
+- title: "Kubernetes Blog"
+  url: "https://kubernetes.io/blog/"
+  source: "Kubernetes.io"
+  blurb: >
+    The official Kubernetes project blog, covering new features, SIG
+    updates, and operational guidance from the core maintainers.
+  tags: ["kubernetes", "cloud-native"]
+
+- title: "Martin Fowler's Blog"
+  url: "https://martinfowler.com/"
+  source: "martinfowler.com"
+  blurb: >
+    Long-running source for domain-driven design, software architecture,
+    and refactoring practice — foundational reading for DDD topics.
+  tags: ["ddd", "architecture"]

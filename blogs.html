@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Our Blogs"
+permalink: /blogs/
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Writing · In Progress</span>
+    <h1>Our Blogs</h1>
+    <p class="hero__lead">
+      This page lists blog posts we're writing from the workshop and
+      tutorial material in this catalog. The posts themselves live in a
+      separate blog project — its publishing format and repo are still
+      TBD — so this page just links out to them once they're published.
+    </p>
+  </div>
+</section>
+
+{%- comment -%}
+  Data-driven list: iterate site.data.blogs and render a .card per entry.
+  Mirrors the markup/classes used on the homepage (index.html). Falls back
+  to a friendly empty state when site.data.blogs is empty or nil.
+{%- endcomment -%}
+<section class="section">
+  <div class="container">
+    {% if site.data.blogs and site.data.blogs.size > 0 %}
+    <div class="cards">
+      {% for entry in site.data.blogs %}
+      <div class="card">
+        <h3 class="card__title"><a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a></h3>
+        <p class="card__desc">{{ entry.blurb }}</p>
+        {% if entry.tags %}
+        <p class="card__desc" style="flex-grow: 0;">
+          {% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
+        </p>
+        {% endif %}
+        <div class="card__meta">
+          {% if entry.date %}<span>{{ entry.date }}</span>{% endif %}
+          {% if entry.author %}<span>{{ entry.author }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="section-sub">
+      Posts are on the way — this page will list blog articles drawn from
+      our workshops and tutorials.
+    </p>
+    {% endif %}
+  </div>
+</section>

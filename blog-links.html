@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Blog Links"
+permalink: /blog-links/
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">Curated Reading</span>
+    <h1>Blog Links</h1>
+    <p class="hero__lead">
+      External blogs and articles we reference while building these
+      workshops and tutorials — a curated reading list, not our own
+      writing (see <a href="{{ '/blogs/' | relative_url }}">Our Blogs</a>
+      for that).
+    </p>
+  </div>
+</section>
+
+{%- comment -%}
+  Data-driven list: iterate site.data.blog_links and render a .card per
+  entry. Mirrors the markup/classes used on the homepage (index.html).
+  Falls back to a friendly empty state when site.data.blog_links is empty
+  or nil.
+{%- endcomment -%}
+<section class="section">
+  <div class="container">
+    {% if site.data.blog_links and site.data.blog_links.size > 0 %}
+    <div class="cards">
+      {% for entry in site.data.blog_links %}
+      <div class="card">
+        <h3 class="card__title"><a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a></h3>
+        <p class="card__desc">{{ entry.blurb }}</p>
+        {% if entry.tags %}
+        <p class="card__desc" style="flex-grow: 0;">
+          {% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
+        </p>
+        {% endif %}
+        <div class="card__meta">
+          {% if entry.source %}<span>{{ entry.source }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="section-sub">
+      Links are on the way — this page will list external blogs and
+      articles relevant to our workshops and tutorials.
+    </p>
+    {% endif %}
+  </div>
+</section>
