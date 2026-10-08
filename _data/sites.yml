@@ -26,13 +26,6 @@ entries:
     site_url: "https://patterncatalyst.github.io/otel-observability-tutorial/"
     repo_url: "https://github.com/patterncatalyst/otel-observability-tutorial"
 
-  - slug: "observability-python-otel-lgtm"
-    title: "Observability for Python with OpenTelemetry & LGTM"
-    group: "Cloud-Native & Kubernetes"
-    synopsis: "The Python-focused predecessor to the multi-language tutorial: instrument a set of Python services with OpenTelemetry and ship traces, metrics, and logs into a self-hosted Grafana LGTM stack, correlating all three across a single request."
-    site_url: "https://patterncatalyst.github.io/observability-python-otel-lgtm/"
-    repo_url: "https://github.com/patterncatalyst/observability-python-otel-lgtm"
-
   - slug: "datamesh-reference-arch-quarkus"
     title: "Data Mesh Reference Architecture · Quarkus"
     group: "Cloud-Native & Kubernetes"
