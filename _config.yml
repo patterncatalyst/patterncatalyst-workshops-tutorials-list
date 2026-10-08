@@ -43,4 +43,5 @@ exclude:
   - node_modules/
   - scripts/
   - README.md
+  - CLAUDE.md
   - LICENSE
