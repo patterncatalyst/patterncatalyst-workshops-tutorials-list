@@ -18,30 +18,32 @@ permalink: /blog-links/
 </section>
 
 {%- comment -%}
-  Data-driven list: iterate site.data.blog_links and render a .card per
-  entry. Mirrors the markup/classes used on the homepage (index.html).
-  Falls back to a friendly empty state when site.data.blog_links is empty
-  or nil.
+  Tabular list of site.data.blog_links. Falls back to a friendly empty state
+  when site.data.blog_links is empty or nil.
 {%- endcomment -%}
 <section class="section">
   <div class="container">
     {% if site.data.blog_links and site.data.blog_links.size > 0 %}
-    <div class="cards">
-      {% for entry in site.data.blog_links %}
-      <div class="card">
-        <h3 class="card__title"><a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a></h3>
-        <p class="card__desc">{{ entry.blurb }}</p>
-        {% if entry.tags %}
-        <p class="card__desc" style="flex-grow: 0;">
-          {% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
-        </p>
-        {% endif %}
-        <div class="card__meta">
-          {% if entry.source %}<span>{{ entry.source }}</span>{% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+    <table>
+      <colgroup>
+        <col style="width:55%"><col style="width:20%"><col style="width:25%">
+      </colgroup>
+      <thead>
+        <tr><th>Blog / Article</th><th>Source</th><th>Tags</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in site.data.blog_links %}
+        <tr>
+          <td>
+            <a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a>
+            {% if entry.blurb %}<br><small>{{ entry.blurb | strip_newlines }}</small>{% endif %}
+          </td>
+          <td>{% if entry.source %}{{ entry.source }}{% else %}—{% endif %}</td>
+          <td>{% if entry.tags %}{% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}{% else %}—{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
     {% else %}
     <p class="section-sub">
       Links are on the way — this page will list external blogs and

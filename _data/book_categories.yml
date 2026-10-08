@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Curated topical grouping for the Books page (/books/).
+#
+# _data/books.yml is the machine-extracted catalog (title/author/publisher/…).
+# This file is the human-curated layer on top of it: it groups those books by
+# topic and sets the order they appear in. books.html joins the two by matching
+# each title below against a title in books.yml.
+#
+# Ordering: categories render top-to-bottom in this order; books within a
+# category render in the order listed. Any book in books.yml NOT listed here
+# falls into an "Other" group at the bottom of the page — add it to a category
+# below to place it.
+#
+# Schema:
+#   - name:  string  — category heading
+#     books: list of strings — exact titles as they appear in _data/books.yml
+# ─────────────────────────────────────────────────────────────────────────
+
+- name: "Domain-Driven Design & Software Design"
+  books:
+    - "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+    - "Implementing Domain-Driven Design"
+    - "Learning Domain-Driven Design"
+    - "Balancing Coupling in Software Design"
+    - "Crafting Great APIs with Domain-Driven Design"
+
+- name: "APIs & Integration"
+  books:
+    - "API Design Patterns"
+    - "Mastering API Architecture"
+    - "Principles of Web API Design"
+    - "RESTful Web API Patterns and Practices Cookbook"
+
+- name: "Cloud-Native, Microservices & Containers"
+  books:
+    - "Monolith to Microservices"
+    - "Optimizing Cloud Native Java"
+    - "SRE with Java Microservices"
+    - "Container Security"
+
+- name: "C++ & Performance"
+  books:
+    - "C++ High Performance"
+    - "C++ Software Design"
+    - "Building Low Latency Applications with C++"
+    - "100 C++ Mistakes and How to Avoid Them"
+    - "Latency: Reduce delay in software systems"

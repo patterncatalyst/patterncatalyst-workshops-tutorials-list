@@ -6,42 +6,48 @@ permalink: /blogs/
 
 <section class="hero">
   <div class="container">
-    <span class="hero__eyebrow">Writing · In Progress</span>
+    <span class="hero__eyebrow">Writing</span>
     <h1>Our Blogs</h1>
     <p class="hero__lead">
-      This page lists blog posts we're writing from the workshop and
-      tutorial material in this catalog. The posts themselves live in a
-      separate blog project — its publishing format and repo are still
-      TBD — so this page just links out to them once they're published.
+      Posts we're writing from the workshop and tutorial material in this
+      catalog. They're published on the Pattern Catalyst Blog; this page
+      links out to each one.
     </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="https://patterncatalyst.github.io/patterncatalyst-blog/" rel="noopener">Visit the blog ↗</a>
+      <a class="btn btn--secondary" href="https://patterncatalyst.github.io/patterncatalyst-blog/feed.xml" rel="noopener">Subscribe (RSS)</a>
+    </div>
   </div>
 </section>
 
 {%- comment -%}
-  Data-driven list: iterate site.data.blogs and render a .card per entry.
-  Mirrors the markup/classes used on the homepage (index.html). Falls back
-  to a friendly empty state when site.data.blogs is empty or nil.
+  Tabular list of site.data.blogs. Falls back to a friendly empty state when
+  site.data.blogs is empty or nil.
 {%- endcomment -%}
 <section class="section">
   <div class="container">
     {% if site.data.blogs and site.data.blogs.size > 0 %}
-    <div class="cards">
-      {% for entry in site.data.blogs %}
-      <div class="card">
-        <h3 class="card__title"><a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a></h3>
-        <p class="card__desc">{{ entry.blurb }}</p>
-        {% if entry.tags %}
-        <p class="card__desc" style="flex-grow: 0;">
-          {% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
-        </p>
-        {% endif %}
-        <div class="card__meta">
-          {% if entry.date %}<span>{{ entry.date }}</span>{% endif %}
-          {% if entry.author %}<span>{{ entry.author }}</span>{% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
+    <table>
+      <colgroup>
+        <col style="width:48%"><col style="width:12%"><col style="width:20%"><col style="width:20%">
+      </colgroup>
+      <thead>
+        <tr><th>Post</th><th>Date</th><th>Source project</th><th>Tags</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in site.data.blogs %}
+        <tr>
+          <td>
+            <a href="{{ entry.url }}" rel="noopener">{{ entry.title }}</a>
+            {% if entry.blurb %}<br><small>{{ entry.blurb | strip_newlines }}</small>{% endif %}
+          </td>
+          <td>{% if entry.date %}{{ entry.date }}{% else %}—{% endif %}</td>
+          <td>{% if entry.source_project %}{{ entry.source_project }}{% else %}—{% endif %}</td>
+          <td>{% if entry.tags %}{% for tag in entry.tags %}<span class="chip">{{ tag }}</span> {% endfor %}{% else %}—{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
     {% else %}
     <p class="section-sub">
       Posts are on the way — this page will list blog articles drawn from
