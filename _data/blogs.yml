@@ -32,6 +32,17 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Cardinality, Not Instrumentation, Is What Makes Observability Expensive"
+  date: "2026-10-09"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/09/cardinality-is-what-makes-observability-expensive/"
+  blurb: >
+    A metric is a family of time series, one per label combination; add a single
+    unbounded label and a cheap counter becomes a six-figure line item. How
+    cardinality drives metric, log, and trace cost, and where to control it.
+  tags: ["observability", "opentelemetry", "cardinality", "cost", "metrics"]
+  source_project: "otel-observability-tutorial"
+
 - title: "L7 Routing Is a Four-Layer Decision Chain, Not an Appliance in a Rack"
   date: "2026-10-07"
   author: "Pattern Catalyst"
