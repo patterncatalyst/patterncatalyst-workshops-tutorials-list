@@ -15,6 +15,7 @@ groups:
   - "Cloud-Native & Kubernetes"
   - "DDD & Integration"
   - "Performance & Optimization"
+  - "C++ Programming"
   - "Systems Programming"
   - "Other"
 
@@ -102,6 +103,13 @@ entries:
     synopsis: "A presentation, a companion Jekyll site, and six runnable Podman demos teaching modern-C++ performance work inside rootless OCI containers, end-to-end on Fedora 44."
     site_url: "https://patterncatalyst.github.io/cpp-container-optimization-tutorial/"
     repo_url: "https://github.com/patterncatalyst/cpp-container-optimization-tutorial"
+
+  - slug: "cpp-statelessness"
+    title: "Stateless C++ Services"
+    group: "C++ Programming"
+    synopsis: "An opinionated reference on stateless C++20/23 service design for Linux containers, with runnable Podman examples and two companion decks."
+    site_url: "https://patterncatalyst.github.io/cpp-statelessness/"
+    repo_url: "https://github.com/patterncatalyst/cpp-statelessness"
 
   - slug: "ebpf-with-aya"
     title: "eBPF with Aya on Fedora"
