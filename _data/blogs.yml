@@ -32,6 +32,18 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Who Knows the Sequence? Three Ways to Coordinate an Order Saga in Quarkus"
+  date: "2026-10-10"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/10/who-knows-the-sequence/"
+  blurb: >
+    Kafka choreography, a Camel route, and a Quarkus Flow document coordinate the
+    same order-triage saga. The split that matters in an incident isn't
+    declarative versus imperative; it's whether any single artifact knows the
+    sequence at all.
+  tags: ["quarkus", "kafka", "camel", "orchestration", "event-driven", "saga"]
+  source_project: "datamesh-reference-arch-quarkus"
+
 - title: "Cardinality, Not Instrumentation, Is What Makes Observability Expensive"
   date: "2026-10-09"
   author: "Pattern Catalyst"
