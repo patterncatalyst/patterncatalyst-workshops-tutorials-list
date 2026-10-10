@@ -32,6 +32,18 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Leave the Toolchain Behind: A C++ Service in 26 MB Instead of 689"
+  date: "2026-10-10"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/10/leave-the-toolchain-behind/"
+  blurb: >
+    A 4 MB C++ binary routinely ships inside a 689 MB image. The fix isn't to
+    shrink the toolchain, it's to leave it behind. Multi-stage builds plus the
+    right UBI runtime tier get the same service down to 26 MB, and the tier you
+    pick is really an incident-response decision, not a size one.
+  tags: ["cpp", "containers", "multi-stage-build", "ubi", "image-size"]
+  source_project: "cpp-container-optimization-tutorial"
+
 - title: "Who Knows the Sequence? Three Ways to Coordinate an Order Saga in Quarkus"
   date: "2026-10-10"
   author: "Pattern Catalyst"
