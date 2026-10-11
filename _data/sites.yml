@@ -111,6 +111,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/cpp-statelessness/"
     repo_url: "https://github.com/patterncatalyst/cpp-statelessness"
 
+  - slug: "cpp-concurrency-and-parallelism"
+    title: "C++ Concurrency and Parallelism"
+    group: "C++ Programming"
+    synopsis: "A chaptered, runnable guide to concurrency and parallelism in modern C++ (C++20/23/26) for low-latency and high-throughput systems, with Docker demos, a NUMA KVM lab, 39 diagrams, and three companion decks."
+    site_url: "https://patterncatalyst.github.io/cpp-concurrency-and-parallelism/"
+    repo_url: "https://github.com/patterncatalyst/cpp-concurrency-and-parallelism"
+
   - slug: "ebpf-with-aya"
     title: "eBPF with Aya on Fedora"
     group: "Systems Programming"

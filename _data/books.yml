@@ -322,3 +322,53 @@
   referenced_by:
     - "quarkus-optimization"
     - "spring-boot-optimization"
+
+- title: "C++ Concurrency in Action"
+  authors: "Anthony Williams"
+  publisher: "Manning"
+  year: 2019
+  isbn: "9781617294693"
+  url: "https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition"
+  review_note: "Second edition (2019, C++17-updated); publisher page verified via manning.com."
+  referenced_by:
+    - "cpp-concurrency-and-parallelism"
+
+- title: "Concurrency with Modern C++"
+  authors: "Rainer Grimm"
+  publisher: "Leanpub"
+  year: 2024
+  isbn: null
+  url: "https://leanpub.com/concurrencywithmodernc"
+  review_note: "Self-published via Leanpub (first released 2018, updated 2024); no ISBN on the Leanpub edition. Also available from Packt."
+  referenced_by:
+    - "cpp-concurrency-and-parallelism"
+
+- title: "Grokking Concurrency"
+  authors: "Kirill Bobrov"
+  publisher: "Manning"
+  year: 2024
+  isbn: "9781633439771"
+  url: "https://www.manning.com/books/grokking-concurrency"
+  review_note: "Manning, 2024; language-agnostic concurrency fundamentals (examples in Python). Publisher page verified."
+  referenced_by:
+    - "cpp-concurrency-and-parallelism"
+
+- title: "Parallel C++"
+  authors: "Patrick Diehl, Steven R. Brandt, Hartmut Kaiser"
+  publisher: "Springer"
+  year: 2024
+  isbn: "9783031543685"
+  url: "https://link.springer.com/book/10.1007/978-3-031-54369-2"
+  review_note: "Full title: Parallel C++: Efficient and Scalable High-Performance Parallel Programming Using HPX. Springer, 2024. Publisher page verified."
+  referenced_by:
+    - "cpp-concurrency-and-parallelism"
+
+- title: "Modern Operating Systems"
+  authors: "Andrew S. Tanenbaum, Herbert Bos"
+  publisher: "Pearson"
+  year: 2022
+  isbn: "9780137618873"
+  url: "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618880"
+  review_note: "Fifth edition (2022), Tanenbaum & Bos; the OS/concurrency foundations reference. Publisher page verified."
+  referenced_by:
+    - "cpp-concurrency-and-parallelism"

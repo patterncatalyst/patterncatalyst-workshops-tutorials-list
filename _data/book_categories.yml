@@ -47,11 +47,16 @@
 
 - name: "C++ & Performance"
   books:
+    - "C++ Concurrency in Action"
+    - "Concurrency with Modern C++"
+    - "Parallel C++"
+    - "Grokking Concurrency"
     - "C++ High Performance"
     - "C++ Software Design"
     - "Building Low Latency Applications with C++"
     - "100 C++ Mistakes and How to Avoid Them"
     - "Latency: Reduce delay in software systems"
+    - "Modern Operating Systems"
 
 - name: "Kubernetes, Helm & Platform Engineering"
   books:
