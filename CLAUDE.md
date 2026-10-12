@@ -6,7 +6,7 @@ Rules and conventions for working on this repo. Read before making changes.
 
 The hub / index site for the PatternCatalyst family: a Jekyll + GitHub Pages
 site that card-grids our workshop and tutorial sites and carries three list
-pages (Our Blogs, Blog Links, Books). Live at
+pages (Our Blogs, Blog Links, Recommended Reading). Live at
 <https://patterncatalyst.github.io/patterncatalyst-workshops-tutorials-list/>.
 
 ## House style
@@ -21,8 +21,9 @@ pages (Our Blogs, Blog Links, Books). Live at
 
 ## Layout convention
 
-- **Listing / index pages use tables, not card grids** (Books, Our Blogs, Blog
-  Links). The top-level site showcase on the home page stays a card grid.
+- **Listing / index pages use tables, not card grids** (Recommended Reading, Our
+  Blogs, Blog Links). The top-level site showcase on the home page stays a card
+  grid.
 - Tables use a `<colgroup>` with sensible column widths; link the title, put a
   short blurb as `<small>` beneath it, render tags as `.chip`s.
 
