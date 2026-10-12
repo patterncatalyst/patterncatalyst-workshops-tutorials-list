@@ -30,6 +30,8 @@
     - "Mastering API Architecture"
     - "Principles of Web API Design"
     - "RESTful Web API Patterns and Practices Cookbook"
+    - "The Design of Web APIs, Second Edition"
+    - "Learning API Styles"
 
 - name: "Cloud-Native, Microservices & Containers"
   books:
