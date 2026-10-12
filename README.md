@@ -14,8 +14,8 @@ reference builds, with a curated reading list and blog links.
 - **Our Blogs:** posts we've written from this material, published on the
   [Pattern Catalyst Blog](https://patterncatalyst.github.io/patterncatalyst-blog/).
 - **Blog Links:** curated external blogs and authors we reference.
-- **Books:** books cited across the projects, grouped by topic, each linked to
-  the publisher.
+- **Recommended Reading:** books cited across the projects, grouped by topic,
+  each linked to the publisher. These are books we recommend, not books we wrote.
 
 ## How it's built
 
@@ -26,7 +26,7 @@ A [Jekyll](https://jekyllrb.com/) site in the PatternCatalyst house style
 | File | Drives |
 |------|--------|
 | `_data/sites.yml` | the home-page card grid of project sites |
-| `_data/books.yml` + `_data/book_categories.yml` | the Books page (catalog + topical grouping) |
+| `_data/books.yml` + `_data/book_categories.yml` | the Recommended Reading page (catalog + topical grouping) |
 | `_data/blog_links.yml` | the Blog Links page |
 | `_data/blogs.yml` | the Our Blogs page |
 
