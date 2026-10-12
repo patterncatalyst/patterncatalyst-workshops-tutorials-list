@@ -32,6 +32,7 @@
   url: "https://www.manning.com/books/api-design-patterns"
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "api-patterns-and-practices-rest"
 
 - title: "Balancing Coupling in Software Design"
   authors: "Vlad Khononov"
@@ -239,6 +240,7 @@
   referenced_by:
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
+    - "api-patterns-and-practices-rest"
 
 - title: "Monolith to Microservices"
   authors: "Sam Newman"
@@ -301,6 +303,7 @@
   referenced_by:
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
+    - "api-patterns-and-practices-rest"
 
 - title: "Site Reliability Engineering"
   authors: "Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy, Charity Majors, Liz Fong-Jones & George Miranda (eds.)"
@@ -372,3 +375,23 @@
   review_note: "Fifth edition (2022), Tanenbaum & Bos; the OS/concurrency foundations reference. Publisher page verified."
   referenced_by:
     - "cpp-concurrency-and-parallelism"
+
+- title: "Learning API Styles"
+  authors: "Dynowski, L. & Dulak, M."
+  publisher: "O'Reilly"
+  year: 2025
+  isbn: "9781098153984"
+  url: "https://www.oreilly.com/library/view/learning-api-styles/9781098153984/"
+  review_note: "Hand-added for api-patterns-and-practices-rest; title/authors/year/isbn verified against the oreilly.com product page (Lukasz Dynowski & Marcin Dulak, 2025, 414pp)."
+  referenced_by:
+    - "api-patterns-and-practices-rest"
+
+- title: "The Design of Web APIs, Second Edition"
+  authors: "Lauret, A."
+  publisher: "Manning"
+  year: 2024
+  isbn: null
+  url: "https://www.manning.com/books/the-design-of-web-apis-second-edition"
+  review_note: "Hand-added for api-patterns-and-practices-rest; verified against the manning.com product page (Arnaud Lauret, 2nd edition)."
+  referenced_by:
+    - "api-patterns-and-practices-rest"
