@@ -452,12 +452,12 @@
     - "cloud-native-design-patterns"
 
 - title: "RESTful Web APIs"
-  authors: "Leonard Richardson, Mike Amundsen & Sam Ruby"
+  authors: "Leonard Richardson & Mike Amundsen"
   publisher: "O'Reilly"
   year: 2013
   isbn: "9781449359713"
   url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); O'Reilly page: September 2013. Not the same book as Amundsen's RESTful Web API Patterns and Practices Cookbook."
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); O'Reilly page: September 2013. Foreword by Sam Ruby; successor to Richardson & Ruby's RESTful Web Services (O'Reilly, 2007); no later edition found. Not the same book as Amundsen's RESTful Web API Patterns and Practices Cookbook."
   referenced_by:
     - "cloud-native-design-patterns"
 
