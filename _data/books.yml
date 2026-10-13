@@ -295,6 +295,7 @@
   referenced_by:
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
+    - "cloud-native-design-patterns"
 
 - title: "RESTful Web API Patterns and Practices Cookbook"
   authors: "Amundsen, M."
@@ -467,5 +468,25 @@
   isbn: null
   url: "https://pragprog.com/titles/mnee2/release-it-second-edition/"
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); subtitle Design and Deploy Production-Ready Software; pragprog.com page: January 2018."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Architecture Modernization"
+  authors: "Nick Tune with Jean-Georges Perrin"
+  publisher: "Manning"
+  year: 2024
+  isbn: null
+  url: "https://www.manning.com/books/architecture-modernization"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page and deck reference slide); subtitle Socio-technical alignment of software, strategy, and structure; manning.com page: January 2024."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Cloud Native Anti-Patterns"
+  authors: "Gerald Bachlmayr, Aiden Ziegelaar, Alan Blockley & Bojan Zivic"
+  publisher: "Packt"
+  year: 2025
+  isbn: "9781836200598"
+  url: "https://www.packtpub.com/en-us/product/cloud-native-anti-patterns-9781836200581"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page and deck reference slide); subtitle Avoiding Common Mistakes and Driving Success with Best Practices and Real-World Cases; March 2025 per Packt listings; print ISBN 9781836200598, eISBN 9781836200581 (packtpub.com blocks automated fetches, details from Packt search listings and a university catalog)."
   referenced_by:
     - "cloud-native-design-patterns"

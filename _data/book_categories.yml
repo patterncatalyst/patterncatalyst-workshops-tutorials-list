@@ -44,6 +44,8 @@
     - "Container Security"
     - "Cloud Native Patterns"
     - "Building Event-Driven Microservices, Second Edition"
+    - "Architecture Modernization"
+    - "Cloud Native Anti-Patterns"
 
 - name: "Distributed Systems & Data"
   books:
