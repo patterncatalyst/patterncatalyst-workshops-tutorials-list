@@ -33,6 +33,7 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
     - "api-patterns-and-practices-rest"
+    - "cloud-native-design-patterns"
 
 - title: "Balancing Coupling in Software Design"
   authors: "Vlad Khononov"
@@ -42,6 +43,7 @@
   url: "https://www.informit.com/store/balancing-coupling-in-software-design-universal-design-9780137353538"
   referenced_by:
     - "domain-driven-design-observability-workshop"
+    - "cloud-native-design-patterns"
 
 - title: "Building Low Latency Applications with C++"
   authors: "Ghosh, S."
@@ -61,6 +63,7 @@
   review_note: "2nd Edition (subtitle: Designing Fine-Grained Systems), published 2021. Print ISBN 9781492034025 (confirmed via Biblio/AbeBooks/eBay listings) differs from the O'Reilly product-page ebook ISBN 9781492034018 — same book, different format, consistent with this catalog's existing print/ebook ISBN convention (see Optimizing Cloud Native Java, SRE with Java Microservices)."
   referenced_by:
     - "otel-observability-tutorial"
+    - "cloud-native-design-patterns"
 
 - title: "Building Resilient Distributed Systems"
   authors: "Sam Newman"
@@ -314,6 +317,7 @@
   review_note: "Full subtitle: How Google Runs Production Systems. A 2nd edition was confirmed to exist (ISBN 9798341607675), with original editors Beyer/Jones/Petoff/Murphy joined by new co-editors Charity Majors, Liz Fong-Jones & George Miranda; scheduled for publication October 27, 2026. Used here per instructions to prefer a 2nd edition when one exists, in place of the free 1st-edition (2016) text hosted at sre.google."
   referenced_by:
     - "otel-observability-tutorial"
+    - "cloud-native-design-patterns"
 
 - title: "SRE with Java Microservices"
   authors: "Schneider, J."
@@ -395,3 +399,73 @@
   review_note: "Hand-added for api-patterns-and-practices-rest; verified against the manning.com product page (Arnaud Lauret, 2nd edition)."
   referenced_by:
     - "api-patterns-and-practices-rest"
+
+- title: "Designing Data-Intensive Applications, Second Edition"
+  authors: "Martin Kleppmann & Chris Riccomini"
+  publisher: "O'Reilly"
+  year: 2026
+  isbn: "9781098119065"
+  url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); 2nd edition published March 2026 per the author's site (O'Reilly lists February 2026); print ISBN, ebook ISBN 9781098119058 in the URL."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Building Event-Driven Microservices, Second Edition"
+  authors: "Adam Bellemare"
+  publisher: "O'Reilly"
+  year: 2025
+  isbn: null
+  url: "https://www.oreilly.com/library/view/building-event-driven-microservices/9798341622180/"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); 2nd edition, O'Reilly product page dated September 2025 (ebook ISBN 9798341622180 in the URL)."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Cloud Native Patterns"
+  authors: "Cornelia Davis"
+  publisher: "Manning"
+  year: 2019
+  isbn: "9781617294297"
+  url: "https://www.manning.com/books/cloud-native-patterns"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); Manning, May 2019; subtitle Designing Change-Tolerant Software."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Patterns of Distributed Systems"
+  authors: "Unmesh Joshi"
+  publisher: "Addison-Wesley"
+  year: 2023
+  isbn: "9780138221980"
+  url: "https://www.informit.com/store/patterns-of-distributed-systems-9780138221980"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); InformIT page: published November 2023 (copyright 2024)."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Patterns for API Design"
+  authors: "Olaf Zimmermann, Mirko Stocker, Daniel Lübke, Uwe Zdun & Cesare Pautasso"
+  publisher: "Addison-Wesley"
+  year: 2022
+  isbn: "9780137670109"
+  url: "https://www.informit.com/store/patterns-for-api-design-simplifying-integration-with-9780137670109"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); subtitle Simplifying Integration with Loosely Coupled Message Exchanges; InformIT page: published November 2022 (copyright 2023)."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "RESTful Web APIs"
+  authors: "Leonard Richardson, Mike Amundsen & Sam Ruby"
+  publisher: "O'Reilly"
+  year: 2013
+  isbn: "9781449359713"
+  url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); O'Reilly page: September 2013. Not the same book as Amundsen's RESTful Web API Patterns and Practices Cookbook."
+  referenced_by:
+    - "cloud-native-design-patterns"
+
+- title: "Release It!, Second Edition"
+  authors: "Michael T. Nygard"
+  publisher: "Pragmatic Bookshelf"
+  year: 2018
+  isbn: null
+  url: "https://pragprog.com/titles/mnee2/release-it-second-edition/"
+  review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); subtitle Design and Deploy Production-Ready Software; pragprog.com page: January 2018."
+  referenced_by:
+    - "cloud-native-design-patterns"

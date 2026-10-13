@@ -32,6 +32,8 @@
     - "RESTful Web API Patterns and Practices Cookbook"
     - "The Design of Web APIs, Second Edition"
     - "Learning API Styles"
+    - "Patterns for API Design"
+    - "RESTful Web APIs"
 
 - name: "Cloud-Native, Microservices & Containers"
   books:
@@ -40,12 +42,20 @@
     - "Optimizing Cloud Native Java"
     - "SRE with Java Microservices"
     - "Container Security"
+    - "Cloud Native Patterns"
+    - "Building Event-Driven Microservices, Second Edition"
+
+- name: "Distributed Systems & Data"
+  books:
+    - "Designing Data-Intensive Applications, Second Edition"
+    - "Patterns of Distributed Systems"
 
 - name: "Observability & Reliability"
   books:
     - "Observability Engineering"
     - "Site Reliability Engineering"
     - "Building Resilient Distributed Systems"
+    - "Release It!, Second Edition"
 
 - name: "C++ & Performance"
   books:
