@@ -12,9 +12,13 @@ scanned repo directories.
 Usage:
     python3 -I scripts/gen-books.py --repos-root /home/rsedor/Dev --out _data/books.yml
 
-The output is machine-generated and flagged for human review: the
-extraction is heuristic text-mining of markdown/asciidoc prose, not a
-real bibliographic parser.
+Re-running MERGES into the existing _data/books.yml rather than
+overwriting it: hand-added entries, review_notes, and human-corrected
+fields are preserved, referenced_by is unioned, only blank fields are
+filled, and newly discovered books are appended. A plain re-run is
+therefore safe. The extraction is still heuristic text-mining of
+markdown/asciidoc prose (plus bibliography-table rows), not a real
+bibliographic parser, so new rows are flagged for human review.
 """
 
 import argparse
@@ -120,6 +124,22 @@ def normalize_key(s):
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
 
 
+# A trailing edition phrase ("…, 2nd ed.", "…, Second Edition") should not
+# fork one book into two entries, so match keys drop it.
+EDITION_SUFFIX_RE = re.compile(
+    r",?\s*\(?(?:first|second|third|fourth|fifth|sixth|[1-9](?:st|nd|rd|th))"
+    r"\s+ed(?:ition)?\.?\)?\s*$",
+    re.IGNORECASE,
+)
+
+
+def match_key(title):
+    """Dedup/merge key that ignores a trailing edition phrase and treats
+    '&' and 'and' the same ('A & B Cookbook' == 'A and B Cookbook')."""
+    t = EDITION_SUFFIX_RE.sub("", (title or "").strip()).replace("&", " and ")
+    return normalize_key(t)
+
+
 def normalize_isbn(raw):
     digits = re.sub(r"[\-\s]", "", raw).upper()
     return digits
@@ -220,16 +240,131 @@ def first_author_key(authors):
     """Normalized surname of the first author, used as part of the dedup
     key when no ISBN is available. Using just the surname (rather than
     the whole first-author chunk) lets "Enberg" and "Pekka Enberg" (or
-    "Evans, B. J." and "Evans") resolve to the same person."""
+    "Evans, B. J." and "Evans") resolve to the same person.
+
+    Splits on &, "and", and commas so the first author is isolated whether
+    the string is "Surname, Initials" ("Geewax, J. J."), "First Last"
+    ("Sam Newman"), or a multi-author list ("Martin Kleppmann, Chris
+    Riccomini"); the surname is the last word of that first chunk."""
     if not authors:
         return ""
-    chunk = authors.split("&")[0].split(" and ")[0].strip().rstrip(",")
-    if "," in chunk:
-        surname = chunk.split(",", 1)[0].strip()
-    else:
-        words = chunk.split()
-        surname = words[-1] if words else chunk
+    chunk = re.split(r"\s*&\s*|\s+and\s+|,", authors.strip())[0].strip()
+    words = chunk.split()
+    surname = words[-1] if words else chunk
     return normalize_key(surname)
+
+
+# ----------------------------------------------------------------------
+# Markdown-table citations (the house "bibliography" page format):
+#   | Title | Author(s) | Publisher | Year | ... |
+# A table row is a far more reliable citation than free-form prose, so a
+# recognized bibliography table is parsed cell-by-cell. The author lives in
+# its own cell AFTER the title, which the prose heuristics cannot see.
+# ----------------------------------------------------------------------
+
+def split_table_cells(line):
+    """Return the trimmed cells of a Markdown table row, or None if the
+    line is not a pipe-delimited row."""
+    s = line.strip()
+    if not s.startswith("|"):
+        return None
+    parts = s.split("|")
+    if parts and parts[0].strip() == "":
+        parts = parts[1:]
+    if parts and parts[-1].strip() == "":
+        parts = parts[:-1]
+    return [c.strip() for c in parts]
+
+
+def is_table_separator(cells):
+    return bool(cells) and all(re.fullmatch(r":?-{2,}:?", c or "") for c in cells)
+
+
+def find_bibliography_columns(cells):
+    """If these header cells look like a bibliography table header, return
+    the (title, author, publisher, year) column indices; else None."""
+    lc = [c.lower() for c in cells]
+
+    def col(*names):
+        for i, c in enumerate(lc):
+            if any(n in c for n in names):
+                return i
+        return None
+
+    ti, ai, pi, yi = col("title"), col("author"), col("publisher"), col("year")
+    if None in (ti, ai, pi, yi):
+        return None
+    return (ti, ai, pi, yi)
+
+
+def parse_table_title_cell(cell):
+    """Extract (title, url) from a title cell that may be a linked and/or
+    italicized Markdown title such as `[*Title*](https://…)`."""
+    link = MD_LINK_RE.search(cell)
+    if link:
+        text, url = link.group(1), link.group(2)
+    else:
+        text, url = cell, None
+    # Emphasis can wrap only part of the cell (e.g. `*Title*, 2nd ed.`), so
+    # remove all emphasis markers rather than only trimming the ends.
+    text = text.replace("*", "").strip().strip("_").strip()
+    return text, url
+
+
+# ----------------------------------------------------------------------
+# Reading the existing _data/books.yml back in, so a re-run MERGES into the
+# curated file instead of overwriting it. Stdlib-only: this parses the
+# narrow, predictable shape that render_yaml() emits (not arbitrary YAML).
+# ----------------------------------------------------------------------
+
+SCALAR_KEYS = ("title", "authors", "publisher", "year", "isbn", "url", "review_note")
+
+
+def parse_yaml_scalar(text):
+    v = text.strip()
+    if v in ("null", ""):
+        return None
+    if v == "[]":
+        return []
+    if re.fullmatch(r"-?\d+", v):
+        return int(v)
+    if len(v) >= 2 and v[0] == '"' and v[-1] == '"':
+        return v[1:-1].replace('\\"', '"').replace("\\\\", "\\")
+    return v
+
+
+def parse_existing_books(path):
+    """Parse a previously generated books.yml into a list of book dicts.
+    Returns [] if the file does not exist."""
+    if not path.exists():
+        return []
+    books = []
+    cur = None
+    collecting_refs = False
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        if raw.startswith("- title:"):
+            if cur is not None:
+                books.append(cur)
+            cur = {k: None for k in SCALAR_KEYS}
+            cur["title"] = parse_yaml_scalar(raw[len("- title:"):])
+            cur["referenced_by"] = []
+            collecting_refs = False
+        elif cur is None:
+            continue
+        elif raw.startswith("  referenced_by:"):
+            rest = raw[len("  referenced_by:"):].strip()
+            cur["referenced_by"] = []
+            collecting_refs = rest != "[]"
+        elif collecting_refs and raw.lstrip().startswith("- "):
+            cur["referenced_by"].append(parse_yaml_scalar(raw.lstrip()[2:]))
+        elif raw.startswith("  ") and ":" in raw:
+            key, _, val = raw.strip().partition(":")
+            if key.strip() in SCALAR_KEYS:
+                cur[key.strip()] = parse_yaml_scalar(val)
+            collecting_refs = False
+    if cur is not None:
+        books.append(cur)
+    return books
 
 
 # ----------------------------------------------------------------------
@@ -694,8 +829,42 @@ def scan_file(path, slug, stats):
 
     in_further_reading = False
     heading_level = None
+    table_cols = None
 
     for line in lines:
+        # Tier 0: a recognized Markdown bibliography table. Parsed cell by
+        # cell, so the author (its own column, after the title) is captured.
+        cells = split_table_cells(line)
+        if cells is not None:
+            if is_table_separator(cells):
+                continue
+            header_cols = find_bibliography_columns(cells)
+            if header_cols is not None:
+                table_cols = header_cols
+                continue
+            if table_cols is not None and max(table_cols) < len(cells):
+                ti, ai, pi, yi = table_cols
+                title, url = parse_table_title_cell(cells[ti])
+                if title and is_plausible_title(title):
+                    publisher = canonical_publisher(cells[pi]) or (cells[pi] or None)
+                    found.append(
+                        {
+                            "title": title,
+                            "authors": cells[ai] or None,
+                            "publisher": publisher,
+                            "year": extract_year(cells[yi]),
+                            "isbn": None,
+                            "url": url,
+                            "referenced_by": slug,
+                            "tier": "table",
+                        }
+                    )
+                    stats["heuristic_hits"] += 1
+            # Any other pipe row (e.g. a non-bibliography table) is skipped
+            # rather than fed to the prose heuristics, which would mis-parse it.
+            continue
+        table_cols = None
+
         heading_m = re.match(r"^(#{1,6})\s+(.*)$", line)
         if heading_m:
             level = len(heading_m.group(1))
@@ -785,7 +954,7 @@ def dedup(records):
 
     for rec in isbn_records:
         key = ("isbn", rec["isbn"])
-        title_to_isbn_key[normalize_key(rec["title"])] = key
+        title_to_isbn_key[match_key(rec["title"])] = key
         if key not in books:
             books[key] = {
                 "title": rec["title"],
@@ -804,7 +973,7 @@ def dedup(records):
                 entry[field] = rec[field]
 
     for rec in other_records:
-        title_norm = normalize_key(rec["title"])
+        title_norm = match_key(rec["title"])
         key = title_to_isbn_key.get(title_norm) or (
             "title",
             title_norm,
@@ -841,6 +1010,66 @@ def dedup(records):
     return result
 
 
+def merge_with_existing(existing, scanned):
+    """Non-destructive merge of a fresh scan into the previously generated
+    file. The existing file is the base: its curated review_notes, its
+    hand-added entries, and any human-corrected fields are all preserved.
+    The scan only UNIONS referenced_by and FILLS blank fields; it never
+    clobbers an existing non-empty value, and never drops an existing book.
+    Newly discovered books are appended after the existing ones.
+    """
+    if not existing:
+        return scanned
+
+    by_isbn = {b["isbn"]: b for b in existing if b.get("isbn")}
+
+    def find_match(cand):
+        if cand.get("isbn") and cand["isbn"] in by_isbn:
+            return by_isbn[cand["isbn"]]
+        ck = match_key(cand["title"])
+        cs = first_author_key(cand.get("authors"))
+        # Same title (ignoring any edition suffix); require author agreement
+        # only when both authors are known.
+        for b in existing:
+            if match_key(b["title"]) == ck:
+                bs = first_author_key(b.get("authors"))
+                if not cs or not bs or cs == bs:
+                    return b
+        # A title that is a substring of another (e.g. a subtitle dropped)
+        # with the same first author also counts as the same book.
+        for b in existing:
+            bk = match_key(b["title"])
+            bs = first_author_key(b.get("authors"))
+            if bk and ck and cs and bs and cs == bs and (ck in bk or bk in ck):
+                return b
+        return None
+
+    new_books = []
+    for cand in scanned:
+        match = find_match(cand)
+        if match is None:
+            new_books.append({
+                "title": cand["title"],
+                "authors": cand.get("authors"),
+                "publisher": cand.get("publisher"),
+                "year": cand.get("year"),
+                "isbn": cand.get("isbn"),
+                "url": cand.get("url"),
+                "review_note": None,
+                "referenced_by": sorted(cand.get("referenced_by") or []),
+            })
+            continue
+        for slug in sorted(cand.get("referenced_by") or []):
+            if slug not in match["referenced_by"]:
+                match["referenced_by"].append(slug)
+        for field in ("authors", "publisher", "year", "isbn", "url"):
+            if not match.get(field) and cand.get(field):
+                match[field] = cand[field]
+
+    new_books.sort(key=lambda b: (normalize_key(b["title"]), first_author_key(b["authors"])))
+    return existing + new_books
+
+
 def yaml_scalar(value):
     if value is None:
         return "null"
@@ -853,19 +1082,25 @@ def yaml_scalar(value):
 def render_yaml(books):
     lines = [
         "# ============================================================",
-        "# MACHINE-GENERATED FILE — do not hand-edit directly.",
+        "# SEMI-GENERATED FILE — safe to hand-edit; re-running MERGES.",
         "#",
         "# Generated by scripts/gen-books.py by scanning the allowlisted",
-        "# project repos for ISBN mentions and italic-title/publisher",
-        "# citations in their Markdown and AsciiDoc sources.",
+        "# project repos for ISBN mentions, italic-title/publisher",
+        "# citations, and bibliography-table rows in their Markdown and",
+        "# AsciiDoc sources.",
         "#",
-        "# NEEDS HUMAN REVIEW: extraction is heuristic text-mining of",
-        "# free-form prose, not a bibliographic parser. Titles, authors,",
-        "# publishers, and years may be incomplete, truncated, or wrong.",
-        "# Verify before treating this list as authoritative.",
+        "# Re-running MERGES into this file: it preserves hand-added",
+        "# entries, review_notes, and human-corrected fields, unions",
+        "# referenced_by, fills only blank fields, and appends newly",
+        "# discovered books. It never overwrites curated data, so a plain",
+        "# re-run is safe.",
         "#",
-        "# Regenerate with:",
+        "# NEEDS HUMAN REVIEW: extraction is heuristic text-mining, not a",
+        "# bibliographic parser. Verify titles, authors, publishers, years.",
+        "#",
+        "# Regenerate (merge) with:",
         "#   python3 -I scripts/gen-books.py --repos-root <path> --out _data/books.yml",
+        "# Add --enrich to fill blank fields via public book APIs.",
         "# ============================================================",
         "",
     ]
@@ -925,14 +1160,24 @@ def main():
         for path in iter_scan_files(repo_dir):
             records.extend(scan_file(path, slug, stats))
 
-    books = dedup(records)
+    out_path = Path(args.out)
+    existing = parse_existing_books(out_path)
+    scanned = dedup(records)
+    books = merge_with_existing(existing, scanned)
 
     if args.enrich:
         enrich_books(books)
 
-    out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(render_yaml(books), encoding="utf-8")
+    print(
+        "gen-books: merge — existing={ex}, scanned unique={sc}, "
+        "newly discovered={new}, total written={tot}".format(
+            ex=len(existing), sc=len(scanned),
+            new=len(books) - len(existing), tot=len(books),
+        ),
+        file=sys.stderr,
+    )
 
     print(
         "gen-books: repos scanned={repos_found} (missing={repos_missing}), "
