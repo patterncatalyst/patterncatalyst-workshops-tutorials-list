@@ -34,6 +34,7 @@
     - "Learning API Styles"
     - "Patterns for API Design"
     - "RESTful Web APIs"
+    - "Enterprise Integration Patterns"
 
 - name: "Cloud-Native, Microservices & Containers"
   books:
@@ -46,6 +47,7 @@
     - "Building Event-Driven Microservices, Second Edition"
     - "Architecture Modernization"
     - "Cloud Native Anti-Patterns"
+    - "Microservices Patterns"
 
 - name: "Distributed Systems & Data"
   books:

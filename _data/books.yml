@@ -64,6 +64,7 @@
   referenced_by:
     - "otel-observability-tutorial"
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications"
 
 - title: "Building Resilient Distributed Systems"
   authors: "Sam Newman"
@@ -132,6 +133,7 @@
   url: "https://www.informit.com/store/domain-driven-design-tackling-complexity-in-the-heart-9780321125217"
   referenced_by:
     - "domain-driven-design-observability-workshop"
+    - "modernizing-enterprise-applications"
 
 - title: "Effective Platform Engineering"
   authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
@@ -254,6 +256,7 @@
   review_note: "year filled as 2019 — confirmed via oreilly.com product page and publisher-adjacent retailer listings (published Nov 22, 2019); resolves the earlier low-confidence OpenLibrary match from --enrich."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications"
 
 - title: "Observability Engineering"
   authors: "Charity Majors, Liz Fong-Jones & George Miranda"
@@ -410,6 +413,7 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); 2nd edition published March 2026 per the author's site (O'Reilly lists February 2026); print ISBN, ebook ISBN 9781098119058 in the URL."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -470,6 +474,7 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); subtitle Design and Deploy Production-Ready Software; pragprog.com page: January 2018."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications"
 
 - title: "Architecture Modernization"
   authors: "Nick Tune with Jean-Georges Perrin"
@@ -490,3 +495,23 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page and deck reference slide); subtitle Avoiding Common Mistakes and Driving Success with Best Practices and Real-World Cases; March 2025 per Packt listings; print ISBN 9781836200598, eISBN 9781836200581 (packtpub.com blocks automated fetches, details from Packt search listings and a university catalog)."
   referenced_by:
     - "cloud-native-design-patterns"
+
+- title: "Enterprise Integration Patterns"
+  authors: "Gregor Hohpe & Bobby Woolf"
+  publisher: "Addison-Wesley"
+  year: 2003
+  isbn: "9780321200686"
+  url: "https://www.enterpriseintegrationpatterns.com/"
+  review_note: "Hand-added for modernizing-enterprise-applications (its Reading List page); the messaging-patterns reference behind the Camel strangler proxy and the sagas; author site enterpriseintegrationpatterns.com."
+  referenced_by:
+    - "modernizing-enterprise-applications"
+
+- title: "Microservices Patterns"
+  authors: "Chris Richardson"
+  publisher: "Manning"
+  year: 2018
+  isbn: "9781617294549"
+  url: "https://www.manning.com/books/microservices-patterns"
+  review_note: "Hand-added for modernizing-enterprise-applications (its Reading List page); saga, CQRS, API composition, and the transactional outbox; manning.com product page."
+  referenced_by:
+    - "modernizing-enterprise-applications"
