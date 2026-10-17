@@ -77,6 +77,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/modernizing-enterprise-applications/"
     repo_url: "https://github.com/patterncatalyst/modernizing-enterprise-applications"
 
+  - slug: "modernizing-enterprise-applications-python"
+    title: "Modernizing Enterprise Applications (Python)"
+    group: "DDD & Integration"
+    synopsis: "A Django monolith strangled to FastAPI microservices, one seam at a time, driven by an AI Development Lifecycle (ADLC) and tested throughout; the Python sibling of the Quarkus edition."
+    site_url: "https://patterncatalyst.github.io/modernizing-enterprise-applications-python/"
+    repo_url: "https://github.com/patterncatalyst/modernizing-enterprise-applications-python"
+
   - slug: "enterprise-integration-patterns-with-camel"
     title: "Enterprise Integration Patterns with Apache Camel"
     group: "DDD & Integration"
