@@ -23,6 +23,7 @@
     - "Learning Domain-Driven Design"
     - "Balancing Coupling in Software Design"
     - "Crafting Great APIs with Domain-Driven Design"
+    - "Structured Design"
 
 - name: "APIs & Integration"
   books:
@@ -50,6 +51,7 @@
     - "Architecture Modernization"
     - "Cloud Native Anti-Patterns"
     - "Microservices Patterns"
+    - "StranglerFigApplication"
 
 - name: "Distributed Systems & Data"
   books:

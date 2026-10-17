@@ -43,6 +43,7 @@ ALLOWED_REPOS = [
     "minikube-on-fedora",
     "domain-driven-design-observability-workshop",
     "modernizing-enterprise-applications",
+    "modernizing-enterprise-applications-python",
     "enterprise-integration-patterns-with-camel",
     "quarkus-optimization",
     "spring-boot-optimization",

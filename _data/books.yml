@@ -50,6 +50,7 @@
   referenced_by:
     - "domain-driven-design-observability-workshop"
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Building Low Latency Applications with C++"
   authors: "Ghosh, S."
@@ -72,6 +73,7 @@
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
     - "api-patterns-and-practices-grpc"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Building Resilient Distributed Systems"
   authors: "Sam Newman"
@@ -141,6 +143,7 @@
   referenced_by:
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Effective Platform Engineering"
   authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
@@ -171,6 +174,7 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
     - "domain-driven-design-observability-workshop"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Kubernetes for Developers"
   authors: "William Denniss"
@@ -222,6 +226,7 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "domain-driven-design-observability-workshop"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Learning Helm"
   authors: "Matt Butcher, Matt Farina, Josh Dolitsky"
@@ -264,6 +269,7 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Observability Engineering"
   authors: "Charity Majors, Liz Fong-Jones & George Miranda"
@@ -329,6 +335,7 @@
   referenced_by:
     - "otel-observability-tutorial"
     - "cloud-native-design-patterns"
+    - "modernizing-enterprise-applications-python"
 
 - title: "SRE with Java Microservices"
   authors: "Schneider, J."
@@ -422,6 +429,7 @@
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
     - "api-patterns-and-practices-graphql"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -483,6 +491,7 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Architecture Modernization"
   authors: "Nick Tune with Jean-Georges Perrin"
@@ -513,6 +522,7 @@
   review_note: "Hand-added for modernizing-enterprise-applications (its Reading List page); the messaging-patterns reference behind the Camel strangler proxy and the sagas; author site enterpriseintegrationpatterns.com."
   referenced_by:
     - "modernizing-enterprise-applications"
+    - "modernizing-enterprise-applications-python"
 
 - title: "Microservices Patterns"
   authors: "Chris Richardson"
@@ -523,6 +533,7 @@
   review_note: "Hand-added for modernizing-enterprise-applications (its Reading List page); saga, CQRS, API composition, and the transactional outbox; manning.com product page."
   referenced_by:
     - "modernizing-enterprise-applications"
+    - "modernizing-enterprise-applications-python"
 
 - title: "gRPC Go for Professionals"
   authors: "Clément Jean"
@@ -573,3 +584,22 @@
   review_note: "Hand-added for api-patterns-and-practices-graphql (its /bibliography/ page); end-to-end applications, authorization, pagination, clients. Chapter titles verified against Manning's livebook; isbn not recorded."
   referenced_by:
     - "api-patterns-and-practices-graphql"
+
+- title: "StranglerFigApplication"
+  authors: "Martin Fowler"
+  publisher: "martinfowler.com"
+  year: 2004
+  isbn: null
+  url: "https://martinfowler.com/bliki/StranglerFigApplication.html"
+  referenced_by:
+    - "modernizing-enterprise-applications-python"
+
+- title: "Structured Design"
+  authors: "Larry Constantine & Ed Yourdon"
+  publisher: "Yourdon Press"
+  year: 1979
+  isbn: null
+  url: null
+  review_note: "No publisher/author product page exists for this 1979 Prentice-Hall classic; left unlinked rather than point at a fabricated URL. Commonly cited ISBN 978-0138544713."
+  referenced_by:
+    - "modernizing-enterprise-applications-python"
