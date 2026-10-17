@@ -421,6 +421,7 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
+    - "api-patterns-and-practices-graphql"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -542,3 +543,33 @@
   review_note: "Hand-added for api-patterns-and-practices-grpc (its /bibliography/ page); performance, scaling, and worked service patterns. NEEDS REVIEW: the url's ISBN segment (9781484299968) is Apress-format, inconsistent with the Packt publisher listed in the project bibliography — confirm publisher/year/isbn before relying on them."
   referenced_by:
     - "api-patterns-and-practices-grpc"
+
+- title: "GraphQL in Action"
+  authors: "Samer Buna"
+  publisher: "Manning"
+  year: 2021
+  isbn: null
+  url: "https://www.manning.com/books/graphql-in-action"
+  review_note: "Hand-added for api-patterns-and-practices-graphql (its /bibliography/ page); the language, schema design, resolvers, data fetching, mutations. Chapter titles verified against Manning's livebook; isbn not recorded."
+  referenced_by:
+    - "api-patterns-and-practices-graphql"
+
+- title: "GraphQL Best Practices"
+  authors: "Artur Czemiel"
+  publisher: "Packt"
+  year: 2024
+  isbn: "9781835467145"
+  url: "https://www.packtpub.com/en-us/product/graphql-best-practices-9781835467145"
+  review_note: "Hand-added for api-patterns-and-practices-graphql (its /bibliography/ page); schema design, error descriptions, query limits and security. isbn from the packtpub.com product URL."
+  referenced_by:
+    - "api-patterns-and-practices-graphql"
+
+- title: "Full Stack GraphQL Applications"
+  authors: "William Lyon"
+  publisher: "Manning"
+  year: 2022
+  isbn: null
+  url: "https://www.manning.com/books/fullstack-graphql-applications"
+  review_note: "Hand-added for api-patterns-and-practices-graphql (its /bibliography/ page); end-to-end applications, authorization, pagination, clients. Chapter titles verified against Manning's livebook; isbn not recorded."
+  referenced_by:
+    - "api-patterns-and-practices-graphql"
