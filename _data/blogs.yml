@@ -32,6 +32,19 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "HTTP/3 Fixes TCP, Not Your Protocol: Why gRPC Doesn't Get a Free Upgrade"
+  date: "2026-10-18"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/18/http3-fixes-tcp-not-grpc/"
+  blurb: >
+    "HTTP/3 fixes head-of-line blocking, so gRPC gets faster" is half true. QUIC
+    fixes TCP's problems; gRPC is defined over HTTP/2 specifically, so
+    gRPC-over-HTTP/3 is a distinct binding neither grpc-java nor grpcio ships yet.
+    How to reason about the transport layers, and how to demo HTTP/3 without
+    overstating what it proves.
+  tags: ["grpc", "http3", "quic", "http2", "transport", "api-design"]
+  source_project: "api-patterns-and-practices-grpc"
+
 - title: "Leave the Toolchain Behind: A C++ Service in 26 MB Instead of 689"
   date: "2026-10-10"
   author: "Pattern Catalyst"
