@@ -32,6 +32,19 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "An ADLC Replaces the SDLC's Slowness, Not Its Safety"
+  date: "2026-10-18"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/18/adlc-replaces-slowness-not-safety/"
+  blurb: >
+    The SDLC's shape comes from one fact: writing code is slow relative to the
+    cost of being wrong. Agents break that, and the serial human gates that
+    provided the SDLC's safety go with it. An AI Development Lifecycle puts that
+    safety back as two irreducible human gates plus a cheap automated equivalence
+    gate, which turns the agent's many attempts into free experiments.
+  tags: ["adlc", "sdlc", "agentic", "ai-development", "modernization"]
+  source_project: "modernizing-enterprise-applications"
+
 - title: "HTTP/3 Fixes TCP, Not Your Protocol: Why gRPC Doesn't Get a Free Upgrade"
   date: "2026-10-18"
   author: "Pattern Catalyst"
