@@ -37,7 +37,6 @@
   isbn: null
   url: "https://www.manning.com/books/api-design-patterns"
   referenced_by:
-    - "cpp-container-optimization-tutorial"
     - "api-patterns-and-practices-rest"
     - "cloud-native-design-patterns"
 
@@ -172,7 +171,6 @@
   isbn: "9780133039894"
   url: "https://www.informit.com/store/implementing-domain-driven-design-9780133039894"
   referenced_by:
-    - "cpp-container-optimization-tutorial"
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications-python"
 
