@@ -53,7 +53,7 @@
     A 4 MB C++ binary routinely ships inside a 689 MB image. The fix isn't to
     shrink the toolchain, it's to leave it behind. Multi-stage builds plus the
     right UBI runtime tier get the same service down to 26 MB, and the tier you
-    pick is really an incident-response decision, not a size one.
+    pick is an incident-response decision, not a size one.
   tags: ["cpp", "containers", "multi-stage-build", "ubi", "image-size"]
   source_project: "cpp-container-optimization-tutorial"
 
