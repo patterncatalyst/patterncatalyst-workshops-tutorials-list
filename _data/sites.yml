@@ -187,6 +187,6 @@ entries:
   - slug: "api-patterns-and-practices-websockets"
     title: "API Patterns & Practices: WebSockets"
     group: "API Design"
-    synopsis: "A contract-first WebSockets API design course built around one AsyncAPI 3 shipping-and-cargo contract: a live handling-event feed that replaces polling the REST booking service. Every hands-on chapter ships the same example in both Quarkus (WebSockets Next) and Python (the native websockets library) against one contract, validated under the AsyncAPI CLI. Foundations and the contract spine (Parts 0–2) are published; later parts build out production concerns, scale-out and fan-out, performance, testing and observability, and the Compose, minikube, and OpenShift/CRC runtime tiers."
+    synopsis: "A contract-first WebSockets API design course built around one AsyncAPI 3 shipping-and-cargo contract: 29 chapters plus an OpenShift/CRC appendix, every hands-on chapter shipping the same example in both Quarkus (WebSockets Next) and Python (native websockets) against one contract, validated under the AsyncAPI CLI. Ships three companion decks (100-level concepts, 201 Quarkus, 201 Python)."
     site_url: "https://patterncatalyst.github.io/api-patterns-and-practices-websockets/"
     repo_url: "https://github.com/patterncatalyst/api-patterns-and-practices-websockets"
