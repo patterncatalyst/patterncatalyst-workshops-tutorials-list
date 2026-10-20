@@ -190,3 +190,10 @@ entries:
     synopsis: "A contract-first WebSockets API design course built around one AsyncAPI 3 shipping-and-cargo contract: 29 chapters plus an OpenShift/CRC appendix, every hands-on chapter shipping the same example in both Quarkus (WebSockets Next) and Python (native websockets) against one contract, validated under the AsyncAPI CLI. Ships three companion decks (100-level concepts, 201 Quarkus, 201 Python)."
     site_url: "https://patterncatalyst.github.io/api-patterns-and-practices-websockets/"
     repo_url: "https://github.com/patterncatalyst/api-patterns-and-practices-websockets"
+
+  - slug: "cn-patterns-and-practices-webassembly"
+    title: "API Patterns & Practices: Server-Side WebAssembly"
+    group: "API Design"
+    synopsis: "A deployment-first, contract-first server-side WebAssembly course built around one WIT (Component Model) shipping-and-cargo contract: 29 chapters across 8 parts, every example in both Rust and Go against one WIT world, run on wasmtime and wasmCloud and deployed to Kubernetes on minikube and OpenShift Local, with CI validating the contract."
+    site_url: "https://patterncatalyst.github.io/cn-patterns-and-practices-webassembly/"
+    repo_url: "https://github.com/patterncatalyst/cn-patterns-and-practices-webassembly"
