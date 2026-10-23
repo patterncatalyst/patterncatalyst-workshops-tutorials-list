@@ -133,6 +133,17 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
 
+- title: "Data Mesh"
+  authors: "Zhamak Dehghani"
+  publisher: "O'Reilly"
+  year: 2022
+  isbn: "9781492092384"
+  url: "https://www.oreilly.com/library/view/data-mesh/9781492092384/"
+  review_note: "Subtitle: Delivering Data-Driven Value at Scale. ISBN is the O'Reilly electronic-edition ISBN matching the product URL; the print ISBN (9781492092391) differs, per this catalog's print/ebook ISBN convention. Hand-added for the datamesh reference-architecture sites."
+  referenced_by:
+    - "datamesh-reference-arch-python"
+    - "datamesh-reference-arch-quarkus"
+
 - title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
   authors: "Eric Evans"
   publisher: "Addison-Wesley"

@@ -55,6 +55,7 @@
 
 - name: "Distributed Systems & Data"
   books:
+    - "Data Mesh"
     - "Designing Data-Intensive Applications, Second Edition"
     - "Patterns of Distributed Systems"
 
