@@ -39,6 +39,7 @@
   referenced_by:
     - "api-patterns-and-practices-rest"
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Balancing Coupling in Software Design"
   authors: "Vlad Khononov"
@@ -74,6 +75,7 @@
     - "api-patterns-and-practices-grpc"
     - "modernizing-enterprise-applications-python"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Building Resilient Distributed Systems"
   authors: "Sam Newman"
@@ -85,6 +87,7 @@
   referenced_by:
     - "otel-observability-tutorial"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "C++ High Performance"
   authors: "Andrist, B. & Sehr, V."
@@ -116,6 +119,7 @@
   referenced_by:
     - "hummingbird-tutorial"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Crafting Great APIs with Domain-Driven Design"
   authors: "Annegret Junker & Fabrizio Lazzaretti"
@@ -158,6 +162,7 @@
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
     - "cn-patterns-and-practices-webassembly"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Effective Platform Engineering"
   authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
@@ -210,6 +215,7 @@
     - "helm-for-developers"
     - "api-patterns-and-practices-rest"
     - "cn-patterns-and-practices-webassembly"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Kubernetes: Up and Running"
   authors: "Brendan Burns, Joe Beda, Kelsey Hightower, Lachlan Evenson"
@@ -222,6 +228,7 @@
     - "helm-for-developers"
     - "api-patterns-and-practices-rest"
     - "cn-patterns-and-practices-webassembly"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Latency: Reduce delay in software systems"
   authors: "Enberg, P."
@@ -233,6 +240,7 @@
   referenced_by:
     - "cpp-container-optimization-tutorial"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Learning Domain-Driven Design"
   authors: "Vlad Khononov"
@@ -245,6 +253,7 @@
     - "cloud-native-design-patterns"
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications-python"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Learning Helm"
   authors: "Matt Butcher, Matt Farina, Josh Dolitsky"
@@ -277,6 +286,7 @@
     - "minikube-on-fedora"
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Monolith to Microservices"
   authors: "Sam Newman"
@@ -301,6 +311,7 @@
     - "otel-observability-tutorial"
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Optimizing Cloud Native Java"
   authors: "Evans, B. J., & Gough, J."
@@ -336,6 +347,7 @@
     - "minikube-on-fedora"
     - "cloud-native-design-patterns"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "RESTful Web API Patterns and Practices Cookbook"
   authors: "Amundsen, M."
@@ -433,6 +445,7 @@
   review_note: "Hand-added for api-patterns-and-practices-rest; title/authors/year/isbn verified against the oreilly.com product page (Lukasz Dynowski & Marcin Dulak, 2025, 414pp)."
   referenced_by:
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "The Design of Web APIs, Second Edition"
   authors: "Lauret, A."
@@ -459,6 +472,7 @@
     - "cn-patterns-and-practices-webassembly"
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -469,6 +483,7 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); 2nd edition, O'Reilly product page dated September 2025 (ebook ISBN 9798341622180 in the URL)."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Cloud Native Patterns"
   authors: "Cornelia Davis"
@@ -489,6 +504,7 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); InformIT page: published November 2023 (copyright 2024)."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Patterns for API Design"
   authors: "Olaf Zimmermann, Mirko Stocker, Daniel Lübke, Uwe Zdun & Cesare Pautasso"
@@ -523,6 +539,7 @@
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
     - "api-patterns-and-practices-grpc"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Architecture Modernization"
   authors: "Nick Tune with Jean-Georges Perrin"
@@ -555,6 +572,7 @@
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
     - "enterprise-integration-patterns-with-camel"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Microservices Patterns"
   authors: "Chris Richardson"
@@ -645,6 +663,7 @@
   url: null
   referenced_by:
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Server-Side WebAssembly"
   authors: "Danilo Chiarlone"
@@ -664,3 +683,21 @@
   review_note: "year corrected to 2022 and url/isbn filled by hand; Apress/Springer list 2022 (print Nov 2021), ISBN 9781484274958."
   referenced_by:
     - "cn-patterns-and-practices-webassembly"
+
+- title: "Cloud Native Anti-Patterns"
+  authors: "Alan Blockley & Bojan Zivic"
+  publisher: "Packt"
+  year: 2025
+  isbn: null
+  url: null
+  referenced_by:
+    - "api-patterns-and-practices-websockets"
+
+- title: "Site Reliability Engineering"
+  authors: "Fong-Jones & George Miranda (eds.)"
+  publisher: "O'Reilly"
+  year: 2026
+  isbn: null
+  url: null
+  referenced_by:
+    - "api-patterns-and-practices-websockets"
