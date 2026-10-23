@@ -55,6 +55,7 @@ ALLOWED_REPOS = [
     "coloringbooks",
     "helm-for-developers",
     "api-patterns-and-practices-rest",
+    "api-patterns-and-practices-grpc",
     "cn-patterns-and-practices-webassembly",
 ]
 
