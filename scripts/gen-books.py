@@ -57,6 +57,7 @@ ALLOWED_REPOS = [
     "api-patterns-and-practices-rest",
     "api-patterns-and-practices-grpc",
     "api-patterns-and-practices-websockets",
+    "otel-observability-tutorial",
     "cn-patterns-and-practices-webassembly",
 ]
 
