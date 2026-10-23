@@ -53,6 +53,11 @@
     - "Microservices Patterns"
     - "StranglerFigApplication"
 
+- name: "WebAssembly"
+  books:
+    - "Server-Side WebAssembly"
+    - "WebAssembly for Cloud"
+
 - name: "Distributed Systems & Data"
   books:
     - "Data Mesh"

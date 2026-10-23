@@ -73,6 +73,7 @@
     - "modernizing-enterprise-applications"
     - "api-patterns-and-practices-grpc"
     - "modernizing-enterprise-applications-python"
+    - "api-patterns-and-practices-rest"
 
 - title: "Building Resilient Distributed Systems"
   authors: "Sam Newman"
@@ -154,6 +155,7 @@
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
+    - "cn-patterns-and-practices-webassembly"
 
 - title: "Effective Platform Engineering"
   authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
@@ -204,6 +206,8 @@
   review_note: "2nd Edition, published 2023-03-16. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
   referenced_by:
     - "helm-for-developers"
+    - "api-patterns-and-practices-rest"
+    - "cn-patterns-and-practices-webassembly"
 
 - title: "Kubernetes: Up and Running"
   authors: "Brendan Burns, Joe Beda, Kelsey Hightower, Lachlan Evenson"
@@ -214,6 +218,8 @@
   review_note: "3rd Edition, published 2022-08-02. Authors expanded from the extracted 'Brendan Burns et al.'. ISBN is the electronic-edition ISBN listed on the O'Reilly learning platform; the print ISBN was not verified."
   referenced_by:
     - "helm-for-developers"
+    - "api-patterns-and-practices-rest"
+    - "cn-patterns-and-practices-webassembly"
 
 - title: "Latency: Reduce delay in software systems"
   authors: "Enberg, P."
@@ -224,6 +230,7 @@
   review_note: "authors normalized 'Enberg' -> 'Enberg, P.' (Pekka Enberg) and year corrected from 2024 to 2025 — confirmed via manning.com product page (MEAP/early access began 2024, but final publication is October 2025). Publisher 'Manning' was already correct."
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "api-patterns-and-practices-rest"
 
 - title: "Learning Domain-Driven Design"
   authors: "Vlad Khononov"
@@ -289,6 +296,7 @@
   review_note: "This is the 1st edition (2022, three authors: Majors, Fong-Jones, Miranda). A heavily revised 2nd edition (ISBN 9781098179915) was published later adding a fourth author, Austin Parker; the 1st edition is used here to match the three-author citation this entry covers. Print ISBN 9781492076445 differs from the O'Reilly product-page ebook ISBN 9781492076438, same convention as other dual-format entries in this file."
   referenced_by:
     - "otel-observability-tutorial"
+    - "api-patterns-and-practices-rest"
 
 - title: "Optimizing Cloud Native Java"
   authors: "Evans, B. J., & Gough, J."
@@ -300,6 +308,7 @@
   referenced_by:
     - "quarkus-optimization"
     - "spring-boot-optimization"
+    - "api-patterns-and-practices-rest"
 
 - title: "Platform Engineering on Kubernetes"
   authors: "Mauricio Salatino"
@@ -321,6 +330,7 @@
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-rest"
 
 - title: "RESTful Web API Patterns and Practices Cookbook"
   authors: "Amundsen, M."
@@ -386,6 +396,7 @@
   review_note: "Manning, 2024; language-agnostic concurrency fundamentals (examples in Python). Publisher page verified."
   referenced_by:
     - "cpp-concurrency-and-parallelism"
+    - "api-patterns-and-practices-rest"
 
 - title: "Parallel C++"
   authors: "Patrick Diehl, Steven R. Brandt, Hartmut Kaiser"
@@ -439,6 +450,8 @@
     - "modernizing-enterprise-applications"
     - "api-patterns-and-practices-graphql"
     - "modernizing-enterprise-applications-python"
+    - "cn-patterns-and-practices-webassembly"
+    - "api-patterns-and-practices-rest"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -489,6 +502,7 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); O'Reilly page: September 2013. Foreword by Sam Ruby; successor to Richardson & Ruby's RESTful Web Services (O'Reilly, 2007); no later edition found. Not the same book as Amundsen's RESTful Web API Patterns and Practices Cookbook."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-rest"
 
 - title: "Release It!, Second Edition"
   authors: "Michael T. Nygard"
@@ -612,3 +626,31 @@
   review_note: "No publisher/author product page exists for this 1979 Prentice-Hall classic; left unlinked rather than point at a fabricated URL. Commonly cited ISBN 978-0138544713."
   referenced_by:
     - "modernizing-enterprise-applications-python"
+
+- title: "Patterns for API Design"
+  authors: "Uwe Zdun & Cesare Pautasso"
+  publisher: "Addison-Wesley"
+  year: 2022
+  isbn: null
+  url: null
+  referenced_by:
+    - "api-patterns-and-practices-rest"
+
+- title: "Server-Side WebAssembly"
+  authors: "Danilo Chiarlone"
+  publisher: "Manning"
+  year: 2026
+  isbn: "9781633436206"
+  url: "https://www.manning.com/books/server-side-webassembly"
+  referenced_by:
+    - "cn-patterns-and-practices-webassembly"
+
+- title: "WebAssembly for Cloud"
+  authors: "Shashank Jain"
+  publisher: "Apress"
+  year: 2022
+  isbn: "9781484274958"
+  url: "https://link.springer.com/book/10.1007/978-1-4842-7496-5"
+  review_note: "year corrected to 2022 and url/isbn filled by hand; Apress/Springer list 2022 (print Nov 2021), ISBN 9781484274958."
+  referenced_by:
+    - "cn-patterns-and-practices-webassembly"

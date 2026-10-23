@@ -55,6 +55,7 @@ ALLOWED_REPOS = [
     "coloringbooks",
     "helm-for-developers",
     "api-patterns-and-practices-rest",
+    "cn-patterns-and-practices-webassembly",
 ]
 
 # Directory fragments that disqualify a path from being scanned, even
