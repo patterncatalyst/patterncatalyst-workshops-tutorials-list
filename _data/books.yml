@@ -546,6 +546,7 @@
   referenced_by:
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
+    - "enterprise-integration-patterns-with-camel"
 
 - title: "Microservices Patterns"
   authors: "Chris Richardson"
