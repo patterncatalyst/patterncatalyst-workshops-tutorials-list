@@ -29,6 +29,7 @@
   review_note: "year corrected from 2024 to 2025 — confirmed via manning.com product page (matches the OpenLibrary value flagged during --enrich)."
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "cpp-statelessness"
 
 - title: "API Design Patterns"
   authors: "Geewax, J. J."
@@ -40,6 +41,7 @@
     - "api-patterns-and-practices-rest"
     - "cloud-native-design-patterns"
     - "api-patterns-and-practices-websockets"
+    - "cpp-statelessness"
 
 - title: "Balancing Coupling in Software Design"
   authors: "Vlad Khononov"
@@ -139,6 +141,7 @@
   url: "https://www.oreilly.com/library/view/c-software-design/9781098113155/"
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "cpp-statelessness"
 
 - title: "Data Mesh"
   authors: "Zhamak Dehghani"
@@ -193,6 +196,7 @@
   referenced_by:
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications-python"
+    - "cpp-statelessness"
 
 - title: "Kubernetes for Developers"
   authors: "William Denniss"
@@ -241,6 +245,7 @@
     - "cpp-container-optimization-tutorial"
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-websockets"
+    - "cpp-statelessness"
 
 - title: "Learning Domain-Driven Design"
   authors: "Vlad Khononov"
