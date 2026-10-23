@@ -48,6 +48,7 @@ ALLOWED_REPOS = [
     "quarkus-optimization",
     "spring-boot-optimization",
     "cpp-container-optimization-tutorial",
+    "cpp-statelessness",
     "ebpf-with-aya",
     "linux-systems-programming",
     "lgtm-skills",
