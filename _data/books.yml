@@ -746,3 +746,30 @@
   url: "https://man7.org/tlpi/"
   referenced_by:
     - "linux-systems-programming"
+
+- title: "BPF Performance Tools"
+  authors: "Brendan Gregg"
+  publisher: "Addison-Wesley"
+  year: 2019
+  isbn: null
+  url: "https://www.brendangregg.com/bpf-performance-tools-book.html"
+  referenced_by:
+    - "ebpf-with-aya"
+
+- title: "Learning eBPF"
+  authors: "Liz Rice"
+  publisher: "O'Reilly"
+  year: 2023
+  isbn: null
+  url: "https://www.oreilly.com/library/view/learning-ebpf/9781098135119/"
+  referenced_by:
+    - "ebpf-with-aya"
+
+- title: "The Rust Programming Language"
+  authors: "Steve Klabnik, Carol Nichols"
+  publisher: "No Starch Press"
+  year: 2023
+  isbn: null
+  url: "https://doc.rust-lang.org/book/"
+  referenced_by:
+    - "ebpf-with-aya"

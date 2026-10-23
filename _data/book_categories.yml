@@ -39,6 +39,12 @@
     - "RESTful Web APIs"
     - "Enterprise Integration Patterns"
 
+- name: "GraphQL"
+  books:
+    - "GraphQL in Action"
+    - "GraphQL Best Practices"
+    - "Full Stack GraphQL Applications"
+
 - name: "Cloud-Native, Microservices & Containers"
   books:
     - "Monolith to Microservices"
@@ -71,6 +77,11 @@
     - "Building Resilient Distributed Systems"
     - "Release It!, Second Edition"
 
+- name: "eBPF & Tracing"
+  books:
+    - "Learning eBPF"
+    - "BPF Performance Tools"
+
 - name: "C++ & Performance"
   books:
     - "C++ Concurrency in Action"
@@ -90,6 +101,7 @@
     - "Advanced Programming in the UNIX Environment, 3rd ed."
     - "Linux Kernel Development, 3rd ed."
     - "Systems Performance, 2nd ed."
+    - "The Rust Programming Language"
 
 - name: "Kubernetes, Helm & Platform Engineering"
   books:
