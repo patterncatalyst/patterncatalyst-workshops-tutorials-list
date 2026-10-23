@@ -49,6 +49,7 @@ ALLOWED_REPOS = [
     "spring-boot-optimization",
     "cpp-container-optimization-tutorial",
     "cpp-statelessness",
+    "cpp-concurrency-and-parallelism",
     "ebpf-with-aya",
     "linux-systems-programming",
     "lgtm-skills",
