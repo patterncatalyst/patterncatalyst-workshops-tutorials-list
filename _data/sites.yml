@@ -105,6 +105,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/spring-boot-optimization/"
     repo_url: "https://github.com/patterncatalyst/spring-boot-optimization"
 
+  - slug: "low-latency-engineering"
+    title: "Low-Latency Engineering in C++, Python & Java"
+    group: "Performance & Optimization"
+    synopsis: "A chaptered, measured book on latency: percentiles, coordinated omission and benchmark harnesses, then the low-latency JVM (JIT and AOT, GC tails, off-heap lock-free hand-off, zero-copy layouts), with runnable C++, Python 3.14 and Java 25 examples and a PREEMPT_RT KVM lab."
+    site_url: "https://patterncatalyst.github.io/low-latency-engineering/"
+    repo_url: "https://github.com/patterncatalyst/low-latency-engineering"
+
   - slug: "cpp-container-optimization-tutorial"
     title: "Optimizing Modern C++ with Containers"
     group: "Performance & Optimization"
