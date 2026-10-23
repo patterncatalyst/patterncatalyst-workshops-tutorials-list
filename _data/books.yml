@@ -84,6 +84,7 @@
   review_note: "Full subtitle: Patterns and Practices for Stable Software. As of Oct 2026 this title is in O'Reilly early access, not yet fully published; confirmed via the author's own site (samnewman.io) and the O'Reilly product page, with print publication targeted for September 2026."
   referenced_by:
     - "otel-observability-tutorial"
+    - "api-patterns-and-practices-grpc"
 
 - title: "C++ High Performance"
   authors: "Andrist, B. & Sehr, V."
@@ -114,6 +115,7 @@
   review_note: "There are two distinct O'Reilly editions of this title by Liz Rice: the 1st edition (ISBN 9781492056690) is copyright 2020, which is what OpenLibrary matched during --enrich and flagged as a year conflict; the 2nd edition (ISBN 9798341627697), released Oct 2025 with a 2026 copyright page, matches this entry's year=2025 and is what the url points to."
   referenced_by:
     - "hummingbird-tutorial"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Crafting Great APIs with Domain-Driven Design"
   authors: "Annegret Junker & Fabrizio Lazzaretti"
@@ -274,6 +276,7 @@
     - "datamesh-reference-arch-python"
     - "minikube-on-fedora"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Monolith to Microservices"
   authors: "Sam Newman"
@@ -297,6 +300,7 @@
   referenced_by:
     - "otel-observability-tutorial"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Optimizing Cloud Native Java"
   authors: "Evans, B. J., & Gough, J."
@@ -309,6 +313,7 @@
     - "quarkus-optimization"
     - "spring-boot-optimization"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Platform Engineering on Kubernetes"
   authors: "Mauricio Salatino"
@@ -366,6 +371,7 @@
   referenced_by:
     - "quarkus-optimization"
     - "spring-boot-optimization"
+    - "api-patterns-and-practices-grpc"
 
 - title: "C++ Concurrency in Action"
   authors: "Anthony Williams"
@@ -452,6 +458,7 @@
     - "modernizing-enterprise-applications-python"
     - "cn-patterns-and-practices-webassembly"
     - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Building Event-Driven Microservices, Second Edition"
   authors: "Adam Bellemare"
@@ -515,6 +522,7 @@
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
+    - "api-patterns-and-practices-grpc"
 
 - title: "Architecture Modernization"
   authors: "Nick Tune with Jean-Georges Perrin"
@@ -558,6 +566,7 @@
   referenced_by:
     - "modernizing-enterprise-applications"
     - "modernizing-enterprise-applications-python"
+    - "api-patterns-and-practices-grpc"
 
 - title: "gRPC Go for Professionals"
   authors: "Clément Jean"
