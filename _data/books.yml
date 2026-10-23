@@ -710,3 +710,39 @@
   url: "https://www.oreilly.com/library/view/building-resilient-distributed/9781098163532/"
   referenced_by:
     - "otel-observability-tutorial"
+
+- title: "Advanced Programming in the UNIX Environment, 3rd ed."
+  authors: "W. Richard Stevens, Stephen A. Rago"
+  publisher: "Addison-Wesley"
+  year: 2013
+  isbn: null
+  url: "https://www.oreilly.com/library/view/advanced-programming-in/9780321638014/"
+  referenced_by:
+    - "linux-systems-programming"
+
+- title: "Linux Kernel Development, 3rd ed."
+  authors: "Robert Love"
+  publisher: "Addison-Wesley"
+  year: 2010
+  isbn: null
+  url: "https://www.oreilly.com/library/view/linux-kernel-development/9780768696974/"
+  referenced_by:
+    - "linux-systems-programming"
+
+- title: "Systems Performance, 2nd ed."
+  authors: "Brendan Gregg"
+  publisher: "Addison-Wesley"
+  year: 2020
+  isbn: null
+  url: "https://www.brendangregg.com/systems-performance-2nd-edition-book.html"
+  referenced_by:
+    - "linux-systems-programming"
+
+- title: "The Linux Programming Interface"
+  authors: "Michael Kerrisk"
+  publisher: "No Starch Press"
+  year: 2010
+  isbn: null
+  url: "https://man7.org/tlpi/"
+  referenced_by:
+    - "linux-systems-programming"
