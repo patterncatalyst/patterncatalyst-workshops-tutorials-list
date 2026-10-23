@@ -56,6 +56,7 @@ ALLOWED_REPOS = [
     "helm-for-developers",
     "api-patterns-and-practices-rest",
     "api-patterns-and-practices-grpc",
+    "api-patterns-and-practices-websockets",
     "cn-patterns-and-practices-webassembly",
 ]
 
