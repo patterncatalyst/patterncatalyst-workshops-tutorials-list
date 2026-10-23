@@ -84,6 +84,13 @@
     - "Latency: Reduce delay in software systems"
     - "Modern Operating Systems"
 
+- name: "Linux & Systems Programming"
+  books:
+    - "The Linux Programming Interface"
+    - "Advanced Programming in the UNIX Environment, 3rd ed."
+    - "Linux Kernel Development, 3rd ed."
+    - "Systems Performance, 2nd ed."
+
 - name: "Kubernetes, Helm & Platform Engineering"
   books:
     - "Learning Helm"
