@@ -73,14 +73,14 @@ entries:
   - slug: "modernizing-enterprise-applications"
     title: "Modernizing Enterprise Applications"
     group: "DDD & Integration"
-    synopsis: "A Spring Boot monolith strangled to Quarkus + Camel microservices, one seam at a time, driven by an AI Development Lifecycle (ADLC) and tested throughout."
+    synopsis: "A Spring Boot monolith strangled to Quarkus + Camel microservices, one seam at a time, driven by an Agentic Development Lifecycle (ADLC) and tested throughout."
     site_url: "https://patterncatalyst.github.io/modernizing-enterprise-applications/"
     repo_url: "https://github.com/patterncatalyst/modernizing-enterprise-applications"
 
   - slug: "modernizing-enterprise-applications-python"
     title: "Modernizing Enterprise Applications (Python)"
     group: "DDD & Integration"
-    synopsis: "A Django monolith strangled to FastAPI microservices, one seam at a time, driven by an AI Development Lifecycle (ADLC) and tested throughout; the Python sibling of the Quarkus edition."
+    synopsis: "A Django monolith strangled to FastAPI microservices, one seam at a time, driven by an Agentic Development Lifecycle (ADLC) and tested throughout; the Python sibling of the Quarkus edition."
     site_url: "https://patterncatalyst.github.io/modernizing-enterprise-applications-python/"
     repo_url: "https://github.com/patterncatalyst/modernizing-enterprise-applications-python"
 

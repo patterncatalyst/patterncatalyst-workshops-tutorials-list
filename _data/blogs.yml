@@ -39,7 +39,7 @@
   blurb: >
     The SDLC's shape comes from one fact: writing code is slow relative to the
     cost of being wrong. Agents break that, and the serial human gates that
-    provided the SDLC's safety go with it. An AI Development Lifecycle puts that
+    provided the SDLC's safety go with it. An Agentic Development Lifecycle puts that
     safety back as two irreducible human gates plus a cheap automated equivalence
     gate, which turns the agent's many attempts into free experiments.
   tags: ["adlc", "sdlc", "agentic", "ai-development", "modernization"]
