@@ -18,6 +18,7 @@ groups:
   - "Performance & Optimization"
   - "C++ Programming"
   - "Systems Programming"
+  - "GoF Design Patterns and SOLID Principles"
   - "Other"
 
 entries:
@@ -146,6 +147,13 @@ entries:
     synopsis: "A chaptered guide to Linux systems programming in modern C++, Go, and Rust: processes, I/O, memory, IPC, networking, concurrency, debugging, containers, and observability, with runnable examples in all three languages."
     site_url: "https://patterncatalyst.github.io/linux-systems-programming/"
     repo_url: "https://github.com/patterncatalyst/linux-systems-programming"
+
+  - slug: "cpp-design-patterns"
+    title: "Design Patterns with C++"
+    group: "GoF Design Patterns and SOLID Principles"
+    synopsis: "GoF patterns, SOLID, and C++ idioms taught as decisions under forces, with runnable gtest-tested examples in modern C++20/23."
+    site_url: "https://patterncatalyst.github.io/cpp-design-patterns/"
+    repo_url: "https://github.com/patterncatalyst/cpp-design-patterns"
 
   - slug: "lgtm-skills"
     title: "LGTM Skills"

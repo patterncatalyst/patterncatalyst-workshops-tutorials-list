@@ -24,6 +24,10 @@
     - "Balancing Coupling in Software Design"
     - "Crafting Great APIs with Domain-Driven Design"
     - "Structured Design"
+    - "Design Patterns: Elements of Reusable Object-Oriented Software"
+    - "Agile Software Development, Principles, Patterns, and Practices"
+    - "Working Effectively with Legacy Code"
+    - "Refactoring: Improving the Design of Existing Code, Second Edition"
 
 - name: "APIs & Integration"
   books:
