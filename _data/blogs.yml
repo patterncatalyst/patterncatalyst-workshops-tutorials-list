@@ -32,6 +32,18 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "A Mean Is Not a Latency, But Little's Law Needs One Anyway"
+  date: "2026-10-23"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/23/a-mean-is-not-a-latency/"
+  blurb: >
+    A mean is the wrong number to report as a latency and the one number
+    Little's Law and Amdahl's Law cannot run without. The fix is to quarantine
+    it: latencies stay percentiles, means live in a labelled model block and
+    nowhere else.
+  tags: ["latency", "performance", "littles-law", "amdahl", "modelling"]
+  source_project: "low-latency-engineering"
+
 - title: "An ADLC Replaces the SDLC's Slowness, Not Its Safety"
   date: "2026-10-18"
   author: "Pattern Catalyst"
