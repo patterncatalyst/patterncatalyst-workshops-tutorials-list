@@ -789,6 +789,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the canonical Gang of Four catalogue. Hosted on the O'Reilly learning platform under the original ISBN 0-201-63361-2; publisher Addison-Wesley confirmed via the InformIT store page for the same title."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Agile Software Development, Principles, Patterns, and Practices"
   authors: "Robert C. Martin"
@@ -799,6 +800,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the source of the SOLID principles. Title/author/publisher/year/isbn verified against the informit.com (Pearson) store page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Working Effectively with Legacy Code"
   authors: "Michael Feathers"

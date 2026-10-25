@@ -155,6 +155,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/cpp-design-patterns/"
     repo_url: "https://github.com/patterncatalyst/cpp-design-patterns"
 
+  - slug: "design-patterns-with-java"
+    title: "Design Patterns with Java"
+    group: "GoF Design Patterns and SOLID Principles"
+    synopsis: "GoF patterns, SOLID, and modern Java idioms taught as decisions under forces, with runnable JUnit 5 examples in Java 25."
+    site_url: "https://patterncatalyst.github.io/design-patterns-with-java/"
+    repo_url: "https://github.com/patterncatalyst/design-patterns-with-java"
+
   - slug: "lgtm-skills"
     title: "LGTM Skills"
     group: "Other"
