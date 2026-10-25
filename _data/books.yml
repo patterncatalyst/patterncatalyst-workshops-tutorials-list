@@ -400,6 +400,7 @@
   review_note: "Second edition (2019, C++17-updated); publisher page verified via manning.com."
   referenced_by:
     - "cpp-concurrency-and-parallelism"
+    - "cpp-design-patterns"
 
 - title: "Concurrency with Modern C++"
   authors: "Rainer Grimm"
@@ -821,3 +822,93 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); 2nd edition, published November 2018. Verified against the author's own page at martinfowler.com, which also links the InformIT product page (ISBN 9780134757711)."
   referenced_by:
     - "cpp-design-patterns"
+
+- title: "Googletest in Practice: Unit Testing Guide for C++ Programmers"
+  authors: "Hyuk Myeong"
+  publisher: "Independently published"
+  year: 2021
+  isbn: "9798767335619"
+  url: "https://openlibrary.org/books/OL36562510M/Googletest_in_Practice"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the GoogleTest/CTest idioms its examples are verified against, read alongside the official GoogleTest docs. Independently published with no publisher storefront; linked to its Open Library catalog page (not a retailer) since the bibliography citation carries no link. Title/author/ISBN verified there and cross-checked against the paperback listing."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "xUnit Test Patterns: Refactoring Test Code"
+  authors: "Gerard Meszaros"
+  publisher: "Addison-Wesley"
+  year: 2007
+  isbn: "9780132800051"
+  url: "https://www.informit.com/store/xunit-test-patterns-refactoring-test-code-9780132800051"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the four-phase test, test-double taxonomy, and test smells its testing appendices map onto GoogleTest/gMock. Verified against the informit.com (Pearson) store page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "The C++ Programming Language"
+  authors: "Bjarne Stroustrup"
+  publisher: "Addison-Wesley"
+  year: 2013
+  isbn: "9780321563842"
+  url: "https://www.informit.com/store/c-plus-plus-programming-language-9780321563842"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); fourth edition, the reference for core-language and standard-library facilities its idiom chapters build on. Verified against the informit.com (Pearson) store page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "Effective Modern C++"
+  authors: "Scott Meyers"
+  publisher: "O'Reilly"
+  year: 2015
+  isbn: "9781491903995"
+  url: "https://www.oreilly.com/library/view/effective-modern-c/9781491908419/"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the value-semantics, ownership, and move idioms its C++ substrate chapters apply. Hosted on the O'Reilly learning platform under 9781491908419; print paperback ISBN 9781491903995 confirmed via Biblio and other retail listings for the same title."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects"
+  authors: "Douglas C. Schmidt, Michael Stal, Hans Rohnert, Frank Buschmann"
+  publisher: "Wiley"
+  year: 2000
+  isbn: "9781118725177"
+  url: "https://www.wiley.com/en-us/Pattern-Oriented+Software+Architecture,+Volume+2,+Patterns+for+Concurrent+and+Networked+Objects-p-9781118725177"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the original catalogue entries for the Monitor Object and Active Object idioms its resource-pool chapter uses. Verified against the wiley.com product page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "The Pragmatic Programmer: Your Journey to Mastery"
+  authors: "David Thomas, Andrew Hunt"
+  publisher: "Addison-Wesley / Pragmatic Bookshelf"
+  year: 2019
+  isbn: "9780135957059"
+  url: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); 20th Anniversary Edition, the source for DRY, orthogonality, and the Robustness Principle in its programming-principles appendix. Verified against the pragprog.com publisher page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "Clean Code: A Handbook of Agile Software Craftsmanship"
+  authors: "Robert C. Martin"
+  publisher: "Prentice Hall"
+  year: 2008
+  isbn: "9780132350884"
+  url: "https://www.pearson.com/en-us/subject-catalog/p/clean-code-a-handbook-of-agile-software-craftsmanship/P200000009044/9780132350884"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the source for the Boy-Scout Rule, Code For The Maintainer, and the do-one-thing discipline behind Curly's Law in its programming-principles appendix. Verified against the pearson.com product page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "The Mythical Man-Month: Essays on Software Engineering"
+  authors: "Frederick P. Brooks Jr."
+  publisher: "Addison-Wesley"
+  year: 1995
+  isbn: "9780132119160"
+  url: "https://www.pearson.com/en-us/subject-catalog/p/Brooks-Mythical-Man-Month-Anniversary-Edition-The-Essays-On-Software-Engineering-2nd-Edition/P200000000149/9780132119160"
+  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); Anniversary edition, the source for Brooks's Law in its programming-principles appendix. Verified against the pearson.com product page."
+  referenced_by:
+    - "cpp-design-patterns"
+
+- title: "Effective Java"
+  authors: "Joshua Bloch"
+  publisher: "Addison-Wesley"
+  year: 2018
+  isbn: "9780134685991"
+  url: "https://www.informit.com/store/effective-java-9780134685991"
+  review_note: "Hand-added for design-patterns-with-java (its /bibliography/ page); third edition, the source for the static-factory, Builder, and immutability idioms its Java substrate and idiomatic-Java chapters apply. Verified against the informit.com (Pearson) store page."
+  referenced_by:
+    - "design-patterns-with-java"

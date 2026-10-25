@@ -28,6 +28,22 @@
     - "Agile Software Development, Principles, Patterns, and Practices"
     - "Working Effectively with Legacy Code"
     - "Refactoring: Improving the Design of Existing Code, Second Edition"
+    - "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects"
+
+- name: "Programming Principles & Craftsmanship"
+  books:
+    - "The Pragmatic Programmer: Your Journey to Mastery"
+    - "Clean Code: A Handbook of Agile Software Craftsmanship"
+    - "The Mythical Man-Month: Essays on Software Engineering"
+
+- name: "Testing"
+  books:
+    - "Googletest in Practice: Unit Testing Guide for C++ Programmers"
+    - "xUnit Test Patterns: Refactoring Test Code"
+
+- name: "Java"
+  books:
+    - "Effective Java"
 
 - name: "APIs & Integration"
   books:
@@ -89,6 +105,8 @@
 - name: "C++ & Performance"
   books:
     - "C++ Concurrency in Action"
+    - "The C++ Programming Language"
+    - "Effective Modern C++"
     - "Concurrency with Modern C++"
     - "Parallel C++"
     - "Grokking Concurrency"
