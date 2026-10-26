@@ -62,6 +62,7 @@
   url: "https://www.packtpub.com/en-us/product/building-low-latency-applications-with-c-9781837639359"
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "low-latency-engineering"
 
 - title: "Building Microservices"
   authors: "Sam Newman"
@@ -90,6 +91,7 @@
     - "otel-observability-tutorial"
     - "api-patterns-and-practices-grpc"
     - "api-patterns-and-practices-websockets"
+    - "low-latency-engineering"
 
 - title: "C++ High Performance"
   authors: "Andrist, B. & Sehr, V."
@@ -100,6 +102,7 @@
   review_note: "year=2020 confirmed via packtpub.com (2nd Edition, Dec 2020); the OpenLibrary value of 2018 flagged during --enrich refers to the 1st edition, not this one."
   referenced_by:
     - "cpp-container-optimization-tutorial"
+    - "low-latency-engineering"
 
 - title: "Certified Kubernetes Application Developer (CKAD) Study Guide"
   authors: "Benjamin Muschko"
@@ -143,6 +146,7 @@
     - "cpp-container-optimization-tutorial"
     - "cpp-statelessness"
     - "cpp-design-patterns"
+    - "low-latency-engineering"
 
 - title: "Data Mesh"
   authors: "Zhamak Dehghani"
@@ -247,6 +251,7 @@
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-websockets"
     - "cpp-statelessness"
+    - "low-latency-engineering"
 
 - title: "Learning Domain-Driven Design"
   authors: "Vlad Khononov"
@@ -260,6 +265,7 @@
     - "domain-driven-design-observability-workshop"
     - "modernizing-enterprise-applications-python"
     - "api-patterns-and-practices-websockets"
+    - "api-patterns-and-practices-graphql"
 
 - title: "Learning Helm"
   authors: "Matt Butcher, Matt Farina, Josh Dolitsky"
@@ -318,6 +324,7 @@
     - "api-patterns-and-practices-rest"
     - "api-patterns-and-practices-grpc"
     - "api-patterns-and-practices-websockets"
+    - "api-patterns-and-practices-graphql"
 
 - title: "Optimizing Cloud Native Java"
   authors: "Evans, B. J., & Gough, J."
@@ -378,6 +385,7 @@
     - "otel-observability-tutorial"
     - "cloud-native-design-patterns"
     - "modernizing-enterprise-applications-python"
+    - "api-patterns-and-practices-websockets"
 
 - title: "SRE with Java Microservices"
   authors: "Schneider, J."
@@ -401,6 +409,7 @@
   referenced_by:
     - "cpp-concurrency-and-parallelism"
     - "cpp-design-patterns"
+    - "low-latency-engineering"
 
 - title: "Concurrency with Modern C++"
   authors: "Rainer Grimm"
@@ -523,6 +532,8 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page); subtitle Simplifying Integration with Loosely Coupled Message Exchanges; InformIT page: published November 2022 (copyright 2023)."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-rest"
+    - "api-patterns-and-practices-websockets"
 
 - title: "RESTful Web APIs"
   authors: "Leonard Richardson & Mike Amundsen"
@@ -548,6 +559,7 @@
     - "modernizing-enterprise-applications-python"
     - "api-patterns-and-practices-grpc"
     - "api-patterns-and-practices-websockets"
+    - "low-latency-engineering"
 
 - title: "Architecture Modernization"
   authors: "Nick Tune with Jean-Georges Perrin"
@@ -568,6 +580,8 @@
   review_note: "Hand-added for cloud-native-design-patterns (its Bibliography page and deck reference slide); subtitle Avoiding Common Mistakes and Driving Success with Best Practices and Real-World Cases; March 2025 per Packt listings; print ISBN 9781836200598, eISBN 9781836200581 (packtpub.com blocks automated fetches, details from Packt search listings and a university catalog)."
   referenced_by:
     - "cloud-native-design-patterns"
+    - "api-patterns-and-practices-graphql"
+    - "api-patterns-and-practices-websockets"
 
 - title: "Enterprise Integration Patterns"
   authors: "Gregor Hohpe & Bobby Woolf"
@@ -930,3 +944,40 @@
   review_note: "Hand-added for design-patterns-with-java (its /bibliography/ page); the mechanics behind Semaphore, ReentrantLock, Condition, and safe publication its resource-and-concurrency-patterns chapter builds on. Verified against the informit.com (Pearson) store page."
   referenced_by:
     - "design-patterns-with-java"
+
+- title: "Code Complete: A Practical Handbook of Software Construction"
+  authors: "Steve McConnell"
+  publisher: "Microsoft Press"
+  year: 2004
+  isbn: null
+  url: "https://www.microsoftpressstore.com/store/code-complete-9780735619678"
+  referenced_by:
+    - "cpp-design-patterns"
+    - "design-patterns-with-java"
+
+- title: "Developing High-Frequency Trading Systems"
+  authors: "Sebastien Donadio, Sourav Ghosh, Romain Rossier"
+  publisher: "Packt"
+  year: 2022
+  isbn: null
+  url: null
+  referenced_by:
+    - "low-latency-engineering"
+
+- title: "Optimizing Java"
+  authors: "Benjamin J. Evans, James Gough, Chris Newland"
+  publisher: "O'Reilly"
+  year: 2018
+  isbn: null
+  url: null
+  referenced_by:
+    - "low-latency-engineering"
+
+- title: "Practical Ultra-Low Latency C++23"
+  authors: "Creel"
+  publisher: "Packt"
+  year: null
+  isbn: null
+  url: null
+  referenced_by:
+    - "low-latency-engineering"

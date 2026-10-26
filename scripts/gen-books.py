@@ -30,6 +30,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from html.parser import HTMLParser
 from pathlib import Path
 
 # ----------------------------------------------------------------------
@@ -59,8 +60,12 @@ ALLOWED_REPOS = [
     "api-patterns-and-practices-rest",
     "api-patterns-and-practices-grpc",
     "api-patterns-and-practices-websockets",
+    "api-patterns-and-practices-graphql",
     "otel-observability-tutorial",
     "cn-patterns-and-practices-webassembly",
+    "cpp-design-patterns",
+    "design-patterns-with-java",
+    "low-latency-engineering",
 ]
 
 # Directory fragments that disqualify a path from being scanned, even
@@ -76,7 +81,7 @@ EXCLUDE_FRAGMENTS = (
     "/.venv/",
 )
 
-SCAN_SUFFIXES = (".md", ".adoc")
+SCAN_SUFFIXES = (".md", ".adoc", ".html")
 
 # ----------------------------------------------------------------------
 # Regexes
@@ -312,10 +317,136 @@ def parse_table_title_cell(cell):
         text, url = link.group(1), link.group(2)
     else:
         text, url = cell, None
+    # A title cell can carry an inline HTML blurb (`Title<br><small>…</small>`);
+    # drop the small-print blurb, keep only the part before a line break, and
+    # strip any remaining tags so the title is clean text.
+    text = re.sub(r"<small\b[^>]*>.*?</small>", "", text, flags=re.IGNORECASE | re.DOTALL)
+    text = re.split(r"<br\s*/?>", text, maxsplit=1, flags=re.IGNORECASE)[0]
+    text = re.sub(r"<[^>]+>", "", text)
     # Emphasis can wrap only part of the cell (e.g. `*Title*, 2nd ed.`), so
     # remove all emphasis markers rather than only trimming the ends.
     text = text.replace("*", "").strip().strip("_").strip()
     return text, url
+
+
+# ----------------------------------------------------------------------
+# HTML-table citations (the house bibliography.html page format, used by the
+# C++/Java design-patterns family instead of a Markdown page):
+#   <thead><tr><th>Title</th><th>Author(s)</th><th>Publisher</th>...</tr>
+#   <tbody><tr><td><a href="URL">Title</a><br><small>blurb</small></td>
+#          <td>Authors</td><td>Publisher</td><td>Year</td>...</tr>
+# Parsed with the stdlib HTML parser (no third-party deps, -I safe). The
+# per-row blurb inside <small> is ignored; the title is the anchor text and
+# the url is its href. Only tables whose header matches find_bibliography_
+# columns() emit rows, so layout/include HTML never produces false hits.
+# ----------------------------------------------------------------------
+
+class _BiblioHTMLParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self._table_depth = 0
+        self._row = None          # list of cell dicts, or None outside a <tr>
+        self._in_cell = False
+        self._cell_tag = None
+        self._small_depth = 0
+        self._anchor_depth = 0
+        self._text = []
+        self._anchor_text = []
+        self._href = None
+        self.rows = []            # list of rows; each row is a list of cells
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "table":
+            self._table_depth += 1
+        elif tag == "tr" and self._table_depth:
+            self._row = []
+        elif tag in ("td", "th") and self._row is not None:
+            self._in_cell = True
+            self._cell_tag = tag
+            self._text = []
+            self._anchor_text = []
+            self._href = None
+            self._small_depth = 0
+            self._anchor_depth = 0
+        elif tag == "small" and self._in_cell:
+            self._small_depth += 1
+        elif tag == "a" and self._in_cell:
+            self._anchor_depth += 1
+            if self._href is None:
+                for k, v in attrs:
+                    if k == "href":
+                        self._href = v
+                        break
+
+    def handle_endtag(self, tag):
+        if tag == "table" and self._table_depth:
+            self._table_depth -= 1
+        elif tag in ("td", "th") and self._in_cell and tag == self._cell_tag:
+            self._row.append(
+                {
+                    "text": "".join(self._text).strip(),
+                    "anchor": "".join(self._anchor_text).strip(),
+                    "href": self._href,
+                }
+            )
+            self._in_cell = False
+            self._cell_tag = None
+        elif tag == "tr" and self._row is not None:
+            self.rows.append(self._row)
+            self._row = None
+        elif tag == "small" and self._small_depth:
+            self._small_depth -= 1
+        elif tag == "a" and self._anchor_depth:
+            self._anchor_depth -= 1
+
+    def handle_data(self, data):
+        # Cell text excludes the <small> blurb; anchor text is captured
+        # separately so a linked title yields a clean title string.
+        if self._in_cell and self._small_depth == 0:
+            self._text.append(data)
+            if self._anchor_depth:
+                self._anchor_text.append(data)
+
+
+def extract_html_bibliography(text, slug):
+    """Mine a house bibliography.html table into book records. Returns [] for
+    any HTML with no recognizable bibliography table (layouts, includes,
+    rendered pages), so scanning all .html is safe."""
+    parser = _BiblioHTMLParser()
+    try:
+        parser.feed(text)
+        parser.close()
+    except Exception:
+        return []
+    cols = None
+    found = []
+    for cells in parser.rows:
+        texts = [c["text"] for c in cells]
+        header = find_bibliography_columns(texts)
+        if header is not None:
+            cols = header
+            continue
+        if cols is None or max(cols) >= len(cells):
+            continue
+        ti, ai, pi, yi = cols
+        tcell = cells[ti]
+        title = (tcell["anchor"] or tcell["text"]).strip()
+        if not title or not is_plausible_title(title):
+            continue
+        publisher = canonical_publisher(texts[pi]) or (texts[pi] or None)
+        found.append(
+            {
+                "title": title,
+                "authors": texts[ai] or None,
+                "publisher": publisher,
+                "year": extract_year(texts[yi]),
+                "isbn": None,
+                "url": tcell["href"],
+                "referenced_by": slug,
+                "tier": "html-table",
+            }
+        )
+    return found
 
 
 # ----------------------------------------------------------------------
@@ -831,6 +962,14 @@ def scan_file(path, slug, stats):
         return []
 
     stats["files_scanned"] += 1
+
+    # HTML files are mined only for the house bibliography-table shape; prose
+    # heuristics do not apply to markup. A non-bibliography .html yields [].
+    if path.suffix.lower() == ".html":
+        recs = extract_html_bibliography(text, slug)
+        stats["heuristic_hits"] += len(recs)
+        return recs
+
     found = []
     lines = text.splitlines()
 
@@ -1035,12 +1174,18 @@ def merge_with_existing(existing, scanned):
             return by_isbn[cand["isbn"]]
         ck = match_key(cand["title"])
         cs = first_author_key(cand.get("authors"))
+        cpub = normalize_publisher_key(cand.get("publisher"))
         # Same title (ignoring any edition suffix); require author agreement
-        # only when both authors are known.
+        # only when both authors are known. Same full title AND same publisher
+        # is the same book even when the author string parsed differently (a
+        # prose citation can truncate the author list), so that also matches.
         for b in existing:
             if match_key(b["title"]) == ck:
                 bs = first_author_key(b.get("authors"))
                 if not cs or not bs or cs == bs:
+                    return b
+                bpub = normalize_publisher_key(b.get("publisher"))
+                if cpub and bpub and cpub == bpub:
                     return b
         # A title that is a substring of another (e.g. a subtitle dropped)
         # with the same first author also counts as the same book.
