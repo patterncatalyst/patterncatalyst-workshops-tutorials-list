@@ -422,6 +422,7 @@
   referenced_by:
     - "cpp-concurrency-and-parallelism"
     - "api-patterns-and-practices-rest"
+    - "design-patterns-with-java"
 
 - title: "Parallel C++"
   authors: "Patrick Diehl, Steven R. Brandt, Hartmut Kaiser"
@@ -812,6 +813,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); seams and dependency-breaking techniques. Verified against the O'Reilly learning-platform product page (ISBN 0131177052)."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Refactoring: Improving the Design of Existing Code, Second Edition"
   authors: "Martin Fowler"
@@ -822,6 +824,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); 2nd edition, published November 2018. Verified against the author's own page at martinfowler.com, which also links the InformIT product page (ISBN 9780134757711)."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Googletest in Practice: Unit Testing Guide for C++ Programmers"
   authors: "Hyuk Myeong"
@@ -842,6 +845,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the four-phase test, test-double taxonomy, and test smells its testing appendices map onto GoogleTest/gMock. Verified against the informit.com (Pearson) store page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "The C++ Programming Language"
   authors: "Bjarne Stroustrup"
@@ -872,6 +876,7 @@
   review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the original catalogue entries for the Monitor Object and Active Object idioms its resource-pool chapter uses. Verified against the wiley.com product page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "The Pragmatic Programmer: Your Journey to Mastery"
   authors: "David Thomas, Andrew Hunt"
@@ -910,5 +915,15 @@
   isbn: "9780134685991"
   url: "https://www.informit.com/store/effective-java-9780134685991"
   review_note: "Hand-added for design-patterns-with-java (its /bibliography/ page); third edition, the source for the static-factory, Builder, and immutability idioms its Java substrate and idiomatic-Java chapters apply. Verified against the informit.com (Pearson) store page."
+  referenced_by:
+    - "design-patterns-with-java"
+
+- title: "Java Concurrency in Practice"
+  authors: "Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea"
+  publisher: "Addison-Wesley"
+  year: 2006
+  isbn: "9780321349606"
+  url: "https://www.informit.com/store/java-concurrency-in-practice-9780321349606"
+  review_note: "Hand-added for design-patterns-with-java (its /bibliography/ page); the mechanics behind Semaphore, ReentrantLock, Condition, and safe publication its resource-and-concurrency-patterns chapter builds on. Verified against the informit.com (Pearson) store page."
   referenced_by:
     - "design-patterns-with-java"
