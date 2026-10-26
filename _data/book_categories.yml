@@ -35,6 +35,7 @@
     - "The Pragmatic Programmer: Your Journey to Mastery"
     - "Clean Code: A Handbook of Agile Software Craftsmanship"
     - "The Mythical Man-Month: Essays on Software Engineering"
+    - "Code Complete: A Practical Handbook of Software Construction"
 
 - name: "Testing"
   books:
@@ -45,6 +46,7 @@
   books:
     - "Effective Java"
     - "Java Concurrency in Practice"
+    - "Optimizing Java"
 
 - name: "APIs & Integration"
   books:
@@ -117,6 +119,8 @@
     - "100 C++ Mistakes and How to Avoid Them"
     - "Latency: Reduce delay in software systems"
     - "Modern Operating Systems"
+    - "Practical Ultra-Low Latency C++23"
+    - "Developing High-Frequency Trading Systems"
 
 - name: "Linux & Systems Programming"
   books:
