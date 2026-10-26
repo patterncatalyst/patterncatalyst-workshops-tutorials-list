@@ -884,9 +884,10 @@
   year: 2019
   isbn: "9780135957059"
   url: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
-  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); 20th Anniversary Edition, the source for DRY, orthogonality, and the Robustness Principle in its programming-principles appendix. Verified against the pragprog.com publisher page."
+  review_note: "Hand-added for cpp-design-patterns and design-patterns-with-java (their /bibliography/ pages); 20th Anniversary Edition, the source for DRY, orthogonality, and the Robustness Principle in their programming-principles appendix. Verified against the pragprog.com publisher page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Clean Code: A Handbook of Agile Software Craftsmanship"
   authors: "Robert C. Martin"
@@ -894,9 +895,10 @@
   year: 2008
   isbn: "9780132350884"
   url: "https://www.pearson.com/en-us/subject-catalog/p/clean-code-a-handbook-of-agile-software-craftsmanship/P200000009044/9780132350884"
-  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); the source for the Boy-Scout Rule, Code For The Maintainer, and the do-one-thing discipline behind Curly's Law in its programming-principles appendix. Verified against the pearson.com product page."
+  review_note: "Hand-added for cpp-design-patterns and design-patterns-with-java (their /bibliography/ pages); the source for the Boy-Scout Rule, Code For The Maintainer, and the do-one-thing discipline behind Curly's Law in their programming-principles appendix. Verified against the pearson.com product page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "The Mythical Man-Month: Essays on Software Engineering"
   authors: "Frederick P. Brooks Jr."
@@ -904,9 +906,10 @@
   year: 1995
   isbn: "9780132119160"
   url: "https://www.pearson.com/en-us/subject-catalog/p/Brooks-Mythical-Man-Month-Anniversary-Edition-The-Essays-On-Software-Engineering-2nd-Edition/P200000000149/9780132119160"
-  review_note: "Hand-added for cpp-design-patterns (its /bibliography/ page); Anniversary edition, the source for Brooks's Law in its programming-principles appendix. Verified against the pearson.com product page."
+  review_note: "Hand-added for cpp-design-patterns and design-patterns-with-java (their /bibliography/ pages); Anniversary edition, the source for Brooks's Law in their programming-principles appendix. Verified against the pearson.com product page."
   referenced_by:
     - "cpp-design-patterns"
+    - "design-patterns-with-java"
 
 - title: "Effective Java"
   authors: "Joshua Bloch"
