@@ -981,3 +981,12 @@
   url: null
   referenced_by:
     - "low-latency-engineering"
+
+- title: "Large-Scale C++ Volume I: Process and Architecture"
+  authors: "John Lakos"
+  publisher: "Addison-Wesley"
+  year: 2019
+  isbn: null
+  url: "https://www.informit.com/store/large-scale-c-plus-plus-volume-i-process-and-architecture-9780201717068"
+  referenced_by:
+    - "cpp-design-patterns"

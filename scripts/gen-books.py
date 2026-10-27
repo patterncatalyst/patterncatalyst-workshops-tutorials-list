@@ -205,6 +205,10 @@ def extract_title(segment):
 def clean_author_prefix(prefix):
     prefix = BULLET_PREFIX_RE.sub("", prefix)
     prefix = prefix.replace("**", "")
+    # A prose citation often reads "<authors>, [<title>](url)"; the opening
+    # bracket (and any trailing comma/paren/space before the title) must not
+    # leak into the author string.
+    prefix = re.sub(r"[\s,\[\(]+$", "", prefix)
     return prefix.strip()
 
 
