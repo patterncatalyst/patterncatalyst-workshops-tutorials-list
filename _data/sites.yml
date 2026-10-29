@@ -162,6 +162,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/design-patterns-with-java/"
     repo_url: "https://github.com/patterncatalyst/design-patterns-with-java"
 
+  - slug: "csharp-design-patterns"
+    title: "Design Patterns with .NET / C#"
+    group: "GoF Design Patterns and SOLID Principles"
+    synopsis: "GoF patterns, SOLID, the platform-defined and concurrency patterns, and modern C# idioms taught as decisions under forces, with runnable xUnit v3 examples on .NET 10 / C# 14."
+    site_url: "https://patterncatalyst.github.io/csharp-design-patterns/"
+    repo_url: "https://github.com/patterncatalyst/csharp-design-patterns"
+
   - slug: "lgtm-skills"
     title: "LGTM Skills"
     group: "Other"
