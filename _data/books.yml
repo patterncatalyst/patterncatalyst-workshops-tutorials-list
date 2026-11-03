@@ -806,6 +806,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Agile Software Development, Principles, Patterns, and Practices"
   authors: "Robert C. Martin"
@@ -817,6 +818,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Working Effectively with Legacy Code"
   authors: "Michael Feathers"
@@ -828,6 +830,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Refactoring: Improving the Design of Existing Code, Second Edition"
   authors: "Martin Fowler"
@@ -839,6 +842,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Googletest in Practice: Unit Testing Guide for C++ Programmers"
   authors: "Hyuk Myeong"
@@ -891,6 +895,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "The Pragmatic Programmer: Your Journey to Mastery"
   authors: "David Thomas, Andrew Hunt"
@@ -913,6 +918,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "The Mythical Man-Month: Essays on Software Engineering"
   authors: "Frederick P. Brooks Jr."
@@ -924,6 +930,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Effective Java"
   authors: "Joshua Bloch"
@@ -954,6 +961,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Developing High-Frequency Trading Systems"
   authors: "Sebastien Donadio, Sourav Ghosh, Romain Rossier"
@@ -990,3 +998,48 @@
   url: "https://www.informit.com/store/large-scale-c-plus-plus-volume-i-process-and-architecture-9780201717068"
   referenced_by:
     - "cpp-design-patterns"
+
+- title: "Architecture Patterns with Python"
+  authors: "Harry Percival, Bob Gregory"
+  publisher: "O'Reilly"
+  year: 2020
+  isbn: null
+  url: "https://www.oreilly.com/library/view/-/9781492052197/"
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Effective Python: 125 Specific Ways to Write Better Python"
+  authors: "Brett Slatkin"
+  publisher: "Addison-Wesley"
+  year: 2024
+  isbn: null
+  url: "https://www.oreilly.com/library/view/-/9780138172398/"
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Fluent Python"
+  authors: "Luciano Ramalho"
+  publisher: "O'Reilly"
+  year: 2022
+  isbn: null
+  url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Pattern-Oriented Software Architecture, Volume 3: Patterns for Resource Management"
+  authors: "Michael Kircher, Prashant Jain"
+  publisher: "Wiley"
+  year: 2004
+  isbn: null
+  url: "https://www.wiley.com/en-us/Pattern-Oriented+Software+Architecture,+Volume+3,+Patterns+for+Resource+Management-p-9780470845257"
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Python Object-Oriented Programming"
+  authors: "Steven F. Lott, Dusty Phillips"
+  publisher: "Packt"
+  year: 2025
+  isbn: null
+  url: "https://www.oreilly.com/library/view/-/9781836642596/"
+  referenced_by:
+    - "design-patterns-with-python"

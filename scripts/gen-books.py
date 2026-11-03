@@ -65,6 +65,7 @@ ALLOWED_REPOS = [
     "cn-patterns-and-practices-webassembly",
     "cpp-design-patterns",
     "design-patterns-with-java",
+    "design-patterns-with-python",
     "low-latency-engineering",
 ]
 

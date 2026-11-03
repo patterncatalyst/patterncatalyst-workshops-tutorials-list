@@ -29,6 +29,7 @@
     - "Working Effectively with Legacy Code"
     - "Refactoring: Improving the Design of Existing Code, Second Edition"
     - "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects"
+    - "Pattern-Oriented Software Architecture, Volume 3: Patterns for Resource Management"
 
 - name: "Programming Principles & Craftsmanship"
   books:
@@ -47,6 +48,13 @@
     - "Effective Java"
     - "Java Concurrency in Practice"
     - "Optimizing Java"
+
+- name: "Python"
+  books:
+    - "Fluent Python"
+    - "Effective Python: 125 Specific Ways to Write Better Python"
+    - "Architecture Patterns with Python"
+    - "Python Object-Oriented Programming"
 
 - name: "APIs & Integration"
   books:
