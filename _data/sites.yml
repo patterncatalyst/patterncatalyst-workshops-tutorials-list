@@ -57,6 +57,14 @@ entries:
     site_url: "https://patterncatalyst.github.io/minikube-on-fedora/"
     repo_url: "https://github.com/patterncatalyst/minikube-on-fedora"
 
+  - slug: "openshift-local-on-fedora"
+    title: "OpenShift Local (CRC) on Fedora"
+    group: "Cloud-Native & Kubernetes"
+    synopsis: "Install and use OpenShift Local (CRC) on Fedora: a single-node OpenShift 4 cluster in a local VM, with oc, kubectl, Routes, Helm, OpenShift Service Mesh, and Operators."
+    site_url: "https://patterncatalyst.github.io/openshift-local-on-fedora/"
+    repo_url: "https://github.com/patterncatalyst/openshift-local-on-fedora"
+    note: "In progress"
+
   - slug: "helm-for-developers"
     title: "Helm for Developers"
     group: "Cloud-Native & Kubernetes"
