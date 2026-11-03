@@ -177,6 +177,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/csharp-design-patterns/"
     repo_url: "https://github.com/patterncatalyst/csharp-design-patterns"
 
+  - slug: "design-patterns-with-python"
+    title: "Design Patterns with Python"
+    group: "GoF Design Patterns and SOLID Principles"
+    synopsis: "GoF patterns and SOLID in idiomatic Python 3.14, sorted into the patterns that dissolve into language features, the ones that survive as design, and the names that need disambiguating, with runnable pytest and mypy --strict examples."
+    site_url: "https://patterncatalyst.github.io/design-patterns-with-python/"
+    repo_url: "https://github.com/patterncatalyst/design-patterns-with-python"
+
   - slug: "lgtm-skills"
     title: "LGTM Skills"
     group: "Other"
