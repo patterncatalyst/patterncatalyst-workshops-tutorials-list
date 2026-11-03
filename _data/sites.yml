@@ -53,7 +53,7 @@ entries:
   - slug: "minikube-on-fedora"
     title: "Minikube Tutorial on Fedora"
     group: "Cloud-Native & Kubernetes"
-    synopsis: "Install and use minikube on Fedora 44 with kubectl and Helm."
+    synopsis: "Install and run minikube on Fedora 44 with kubectl, Helm, Istio, and KEDA, building up to a data mesh final project across REST, gRPC, GraphQL, and Kafka, plus a Kubernetes design patterns and CKAD appendix."
     site_url: "https://patterncatalyst.github.io/minikube-on-fedora/"
     repo_url: "https://github.com/patterncatalyst/minikube-on-fedora"
 
