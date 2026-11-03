@@ -110,8 +110,8 @@
   author: "Pattern Catalyst"
   url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/10/07/l7-routing-for-cloud-native-apps/"
   blurb: >
-    L7 routing in 2026 isn't a box in a rack — it's layered software (edge,
-    gateway, mesh, app) making a decision on every HTTP and gRPC envelope,
-    and knowing which layer owns which decision is the whole game.
+    L7 routing in 2026 is layered software (edge, gateway, mesh, app) making
+    a decision on every HTTP and gRPC envelope; the whole game is knowing
+    which layer owns which decision.
   tags: ["cloud-native", "l7-routing", "kubernetes", "api-gateway", "service-mesh"]
   source_project: "cloud-native-design-patterns"

@@ -103,14 +103,14 @@ entries:
   - slug: "quarkus-optimization"
     title: "Taming the JVM · Quarkus"
     group: "Performance & Optimization"
-    synopsis: "Optimizing Java (Quarkus) workloads on OpenShift and Kubernetes — GC, memory, and rightsizing under container limits."
+    synopsis: "Optimizing Java (Quarkus) workloads on OpenShift and Kubernetes: GC, memory, and rightsizing under container limits."
     site_url: "https://patterncatalyst.github.io/quarkus-optimization/"
     repo_url: "https://github.com/patterncatalyst/quarkus-optimization"
 
   - slug: "spring-boot-optimization"
     title: "Taming the JVM · Spring Boot"
     group: "Performance & Optimization"
-    synopsis: "Optimizing Spring Boot workloads on OpenShift and Kubernetes — GC, memory, and rightsizing under container limits."
+    synopsis: "Optimizing Spring Boot workloads on OpenShift and Kubernetes: GC, memory, and rightsizing under container limits."
     site_url: "https://patterncatalyst.github.io/spring-boot-optimization/"
     repo_url: "https://github.com/patterncatalyst/spring-boot-optimization"
 
@@ -190,22 +190,22 @@ entries:
     synopsis: "The source-of-truth collection of lgtm-* Claude Skills encoding house conventions for themed diagrams, Jekyll docs sites, Red Hat-branded decks, local and Kubernetes observability stacks, and the git/release workflow."
     site_url: null
     repo_url: "https://github.com/patterncatalyst/lgtm-skills"
-    note: "private — source-of-truth repo, no public site"
+    note: "Private source-of-truth repo, no public site"
 
   - slug: "hummingbird-tutorial"
     title: "Hummingbird Tutorial"
     group: "Other"
-    synopsis: "A follow-along, cut-and-paste tutorial for Red Hat Project Hummingbird — minimal, hardened, near-zero-CVE container images — using Podman, Podman Compose, and Podman Desktop on Fedora 44 or macOS."
+    synopsis: "A follow-along, cut-and-paste tutorial for Red Hat Project Hummingbird (minimal, hardened, near-zero-CVE container images) using Podman, Podman Compose, and Podman Desktop on Fedora 44 or macOS."
     site_url: "https://patterncatalyst.github.io/hummingbird-tutorial/"
     repo_url: "https://github.com/patterncatalyst/hummingbird-tutorial"
 
   - slug: "coloringbooks"
     title: "Coloring Books"
     group: "Other"
-    synopsis: "Three container-themed coloring books — Container Commandos, the Red Hat Container Coloring Book, and an SELinux coloring book — as printable PDFs."
+    synopsis: "Three container-themed coloring books as printable PDFs: Container Commandos, the Red Hat Container Coloring Book, and an SELinux coloring book."
     site_url: null
     repo_url: "https://github.com/patterncatalyst/coloringbooks"
-    note: "PDF downloads — no site"
+    note: "PDF downloads, no site"
 
   - slug: "api-patterns-and-practices-rest"
     title: "API Patterns & Practices: REST"
