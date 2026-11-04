@@ -99,15 +99,6 @@
     "Building Microservices" and "Monolith to Microservices".
   tags: ["microservices", "architecture"]
 
-- title: "Strimzi Blog"
-  url: "https://strimzi.io/blog/"
-  source: "strimzi.io"
-  blurb: >
-    The Strimzi project blog on running Apache Kafka on Kubernetes:
-    operators, deployment patterns, and release coverage from the
-    maintainers.
-  tags: ["kafka", "strimzi", "kubernetes"]
-
 - title: "Quarkus Blog"
   url: "https://quarkus.io/blog/"
   source: "Quarkus.io"
@@ -131,6 +122,15 @@
     Red Hat's developer blog, covering Quarkus, Camel, OpenShift, and
     Kubernetes with hands-on tutorials and release coverage.
   tags: ["quarkus", "camel", "kubernetes", "openshift"]
+
+- title: "Strimzi Blog"
+  url: "https://strimzi.io/blog/"
+  source: "strimzi.io"
+  blurb: >
+    The Strimzi project blog on running Apache Kafka on Kubernetes:
+    operators, deployment patterns, and release coverage from the
+    maintainers.
+  tags: ["kafka", "strimzi", "kubernetes"]
 
 - title: "Rebecca's Blog"
   url: "https://wirfs-brock.com/rebecca/blog/"
