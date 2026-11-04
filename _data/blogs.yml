@@ -32,6 +32,18 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "The Runtime Stage Is a Different Machine"
+  date: "2026-11-03"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/11/03/the-runtime-stage-is-a-different-machine/"
+  blurb: >
+    A single-stage Containerfile ships the compiler to production. Multi-stage
+    builds treat the build box and the run box as two different machines, and
+    that one separation is what later lets you pick a hardened runtime base, run
+    as non-root, and ship something a cluster can pull fast.
+  tags: ["containers", "multi-stage-build", "security", "kubernetes"]
+  source_project: "cloud-native-design-patterns"
+
 - title: "A Mean Is Not a Latency, But Little's Law Needs One Anyway"
   date: "2026-10-23"
   author: "Pattern Catalyst"
