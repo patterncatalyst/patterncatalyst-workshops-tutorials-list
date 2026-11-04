@@ -60,10 +60,9 @@ entries:
   - slug: "openshift-local-on-fedora"
     title: "OpenShift Local (CRC) on Fedora"
     group: "Cloud-Native & Kubernetes"
-    synopsis: "Install and use OpenShift Local (CRC) on Fedora: a single-node OpenShift 4 cluster in a local VM, with oc, kubectl, Routes, Helm, OpenShift Service Mesh, and Operators."
+    synopsis: "Install and use OpenShift Local (CRC) on Fedora: a single-node OpenShift 4 cluster in a local VM, with oc, Routes, Helm, OpenShift Service Mesh, and Operators, through to a data-mesh final project. Closes with a 33-chapter Kubernetes design-patterns appendix mapped to DO280/EX280, all verified live under restricted-v2, plus OpenShift 101, 201, and patterns decks."
     site_url: "https://patterncatalyst.github.io/openshift-local-on-fedora/"
     repo_url: "https://github.com/patterncatalyst/openshift-local-on-fedora"
-    note: "In progress"
 
   - slug: "helm-for-developers"
     title: "Helm for Developers"
