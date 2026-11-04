@@ -32,6 +32,18 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Let the Rules Decide: A Camel Content-Based Router on Drools"
+  date: "2026-11-04"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/11/04/let-the-rules-decide/"
+  blurb: >
+    A Content-Based Router written as choice().when(...) bakes business policy
+    into a RouteBuilder, so changing a pricing threshold means a redeploy. Hand
+    the decision to a rule engine instead: Camel keeps the fixed topology, Drools
+    owns the when, and toD() is the seam between them.
+  tags: ["camel", "drools", "eip", "business-rules"]
+  source_project: "enterprise-integration-patterns-with-camel"
+
 - title: "Cut One Seam, Prove It Equal: ADLC Modernization in Practice"
   date: "2026-11-03"
   author: "Pattern Catalyst"
