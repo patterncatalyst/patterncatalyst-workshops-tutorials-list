@@ -171,6 +171,7 @@
     - "modernizing-enterprise-applications-python"
     - "cn-patterns-and-practices-webassembly"
     - "api-patterns-and-practices-websockets"
+    - "design-patterns-with-python"
 
 - title: "Effective Platform Engineering"
   authors: "Bryan Oliver, Nic Cheneweth, Ajay Chankramath, Sean Alvarez"
@@ -1070,3 +1071,13 @@
   url: "https://leanpub.com/design-and-reality"
   review_note: "Hand-added 2026-11-03 at the owner's request (all of Rebecca Wirfs-Brock's books). Essays on modelling and domain-driven design; Leanpub lists it as published 2024-01-10, no ISBN."
   referenced_by: []
+
+- title: "Patterns of Enterprise Application Architecture"
+  authors: "Martin Fowler"
+  publisher: "Addison-Wesley"
+  year: 2002
+  isbn: "9780321127426"
+  url: "https://www.informit.com/store/patterns-of-enterprise-application-architecture-9780321127426"
+  review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page), where it is credited for Value Object. InformIT gives the publication date as 5 Nov 2002."
+  referenced_by:
+    - "design-patterns-with-python"
