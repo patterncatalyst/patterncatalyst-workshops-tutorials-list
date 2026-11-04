@@ -32,6 +32,19 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Deploy Is Not Release: Runtime Route Control with Camel and Feature Flags"
+  date: "2026-11-04"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/11/04/deploy-is-not-release/"
+  blurb: >
+    Deploying an artifact and releasing a feature are different events, and a
+    flag is what splits them. In a Quarkus + Camel route, the gradual rollout,
+    the A/B test, and the targeted enablement are all flag flips evaluated per
+    message with OpenFeature and flagd, with no redeploy on the release or the
+    rollback.
+  tags: ["camel", "feature-flags", "openfeature", "progressive-delivery"]
+  source_project: "enterprise-integration-patterns-with-camel"
+
 - title: "Let the Rules Decide: A Camel Content-Based Router on Drools"
   date: "2026-11-04"
   author: "Pattern Catalyst"
