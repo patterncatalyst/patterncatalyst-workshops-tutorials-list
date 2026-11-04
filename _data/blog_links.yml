@@ -48,6 +48,15 @@
     "Building Microservices" and "Monolith to Microservices".
   tags: ["microservices", "architecture"]
 
+- title: "Strimzi Blog"
+  url: "https://strimzi.io/blog/"
+  source: "strimzi.io"
+  blurb: >
+    The Strimzi project blog on running Apache Kafka on Kubernetes:
+    operators, deployment patterns, and release coverage from the
+    maintainers.
+  tags: ["kafka", "strimzi", "kubernetes"]
+
 - title: "Enterprise Integration Patterns"
   url: "https://www.enterpriseintegrationpatterns.com/"
   source: "Hohpe & Woolf"
@@ -63,6 +72,22 @@
     The Apache Camel project blog: releases, component updates, and
     integration guidance from the maintainers.
   tags: ["camel", "integration"]
+
+- title: "Coding Horror"
+  url: "https://blog.codinghorror.com/"
+  source: "Jeff Atwood"
+  blurb: >
+    Long-running blog on programming and the human side of software, from
+    the co-founder of Stack Overflow and Discourse.
+  tags: ["programming", "software-development"]
+
+- title: "Red Hat Blog"
+  url: "https://www.redhat.com/en/blog"
+  source: "redhat.com"
+  blurb: >
+    Red Hat's main blog: product news, open source strategy, and
+    perspectives across Linux, hybrid cloud, automation, and AI.
+  tags: ["red-hat", "open-source", "cloud-native"]
 
 - title: "Red Hat Developer Blog"
   url: "https://developers.redhat.com/blog"
