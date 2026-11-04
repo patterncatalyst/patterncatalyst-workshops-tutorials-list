@@ -32,6 +32,19 @@
 # blogs.html renders a friendly empty state when the list below is empty.
 # ─────────────────────────────────────────────────────────────────────────
 
+- title: "Cut One Seam, Prove It Equal: ADLC Modernization in Practice"
+  date: "2026-11-03"
+  author: "Pattern Catalyst"
+  url: "https://patterncatalyst.github.io/patterncatalyst-blog/2026/11/03/cut-one-seam-prove-it-equal/"
+  blurb: >
+    A coding agent can draft a service extraction in an afternoon, which makes
+    the old question louder: did the behavior change? A strangler-fig migration
+    run on an Agentic Development Lifecycle answers it one seam at a time, with a
+    behavior-equivalence gate over a real socket between every extraction and
+    production.
+  tags: ["adlc", "modernization", "strangler-fig", "python"]
+  source_project: "modernizing-enterprise-applications-python"
+
 - title: "The Runtime Stage Is a Different Machine"
   date: "2026-11-03"
   author: "Pattern Catalyst"
