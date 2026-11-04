@@ -1043,3 +1043,30 @@
   url: "https://www.oreilly.com/library/view/-/9781836642596/"
   referenced_by:
     - "design-patterns-with-python"
+
+- title: "Designing Object-Oriented Software"
+  authors: "Rebecca Wirfs-Brock, Brian Wilkerson, Lauren Wiener"
+  publisher: "Prentice Hall"
+  year: 1990
+  isbn: "9780136298250"
+  url: "https://wirfs-brock.com/rebecca/books/DesigningObject-OrientedSoftware/"
+  review_note: "Hand-added 2026-11-03 at the owner's request (all of Rebecca Wirfs-Brock's books). The book that introduced responsibility-driven design. Out of print, so the link is the author's own page for the book; ISBN-10 0136298257 per library catalogue records."
+  referenced_by: []
+
+- title: "Object Design: Roles, Responsibilities, and Collaborations"
+  authors: "Rebecca Wirfs-Brock, Alan McKean"
+  publisher: "Addison-Wesley"
+  year: 2002
+  isbn: "9780201379433"
+  url: "https://www.informit.com/store/object-design-roles-responsibilities-and-collaborations-9780201379433"
+  review_note: "Hand-added 2026-11-03 at the owner's request (all of Rebecca Wirfs-Brock's books). InformIT gives the publication date as 8 Nov 2002 (copyright 2003)."
+  referenced_by: []
+
+- title: "Design and Reality: Essays on Software Design"
+  authors: "Rebecca Wirfs-Brock, Mathias Verraes"
+  publisher: "Leanpub"
+  year: 2024
+  isbn: null
+  url: "https://leanpub.com/design-and-reality"
+  review_note: "Hand-added 2026-11-03 at the owner's request (all of Rebecca Wirfs-Brock's books). Essays on modelling and domain-driven design; Leanpub lists it as published 2024-01-10, no ISBN."
+  referenced_by: []
