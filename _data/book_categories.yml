@@ -34,6 +34,7 @@
     - "Refactoring: Improving the Design of Existing Code, Second Edition"
     - "Pattern-Oriented Software Architecture, Volume 2: Patterns for Concurrent and Networked Objects"
     - "Pattern-Oriented Software Architecture, Volume 3: Patterns for Resource Management"
+    - "Pattern Languages of Program Design 3"
 
 - name: "Programming Principles & Craftsmanship"
   books:
@@ -41,11 +42,13 @@
     - "Clean Code: A Handbook of Agile Software Craftsmanship"
     - "The Mythical Man-Month: Essays on Software Engineering"
     - "Code Complete: A Practical Handbook of Software Construction"
+    - "Object-Oriented Software Construction"
 
 - name: "Testing"
   books:
     - "Googletest in Practice: Unit Testing Guide for C++ Programmers"
     - "xUnit Test Patterns: Refactoring Test Code"
+    - "Python Testing with pytest"
 
 - name: "Java"
   books:

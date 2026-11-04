@@ -865,6 +865,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "The C++ Programming Language"
   authors: "Bjarne Stroustrup"
@@ -908,6 +909,7 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
+    - "design-patterns-with-python"
 
 - title: "Clean Code: A Handbook of Agile Software Craftsmanship"
   authors: "Robert C. Martin"
@@ -1079,5 +1081,35 @@
   isbn: "9780321127426"
   url: "https://www.informit.com/store/patterns-of-enterprise-application-architecture-9780321127426"
   review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page), where it is credited for Value Object. InformIT gives the publication date as 5 Nov 2002."
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Object-Oriented Software Construction"
+  authors: "Bertrand Meyer"
+  publisher: "Prentice Hall"
+  year: 1997
+  isbn: "9780136291558"
+  url: "https://www.informit.com/store/object-oriented-software-construction-9780136291558"
+  review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page): second edition, credited for the open-closed principle and Design by Contract."
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Pattern Languages of Program Design 3"
+  authors: "Robert C. Martin, Dirk Riehle, Frank Buschmann (eds.); Bobby Woolf (\"Null Object\")"
+  publisher: "Addison-Wesley"
+  year: 1998
+  isbn: "9780201310115"
+  url: "https://www.informit.com/store/pattern-languages-of-program-design-3-9780201310115"
+  review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page), which credits Bobby Woolf's chapter \"Null Object\". Year and editors checked against Open Library and InformIT (copyright 1998)."
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "Python Testing with pytest"
+  authors: "Brian Okken"
+  publisher: "Pragmatic Bookshelf"
+  year: 2022
+  isbn: "9781680508604"
+  url: "https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/"
+  review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page): second edition, February 2022, per the publisher page."
   referenced_by:
     - "design-patterns-with-python"
