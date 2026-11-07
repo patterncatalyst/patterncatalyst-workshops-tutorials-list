@@ -10,7 +10,7 @@ directory being added ahead of stdlib). Never imports anything from the
 scanned repo directories.
 
 Usage:
-    python3 -I scripts/gen-books.py --repos-root /home/rsedor/Dev --out _data/books.yml
+    python3 -I scripts/gen-books.py --repos-root ~/Dev --out _data/books.yml
 
 Re-running MERGES into the existing _data/books.yml rather than
 overwriting it: hand-added entries, review_notes, and human-corrected
