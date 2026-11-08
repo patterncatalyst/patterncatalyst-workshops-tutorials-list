@@ -1007,7 +1007,7 @@
   publisher: "O'Reilly"
   year: 2020
   isbn: null
-  url: "https://www.oreilly.com/library/view/-/9781492052197/"
+  url: "https://www.oreilly.com/library/view/architecture-patterns-with/9781492052197/"
   referenced_by:
     - "design-patterns-with-python"
 
@@ -1016,7 +1016,7 @@
   publisher: "Addison-Wesley"
   year: 2024
   isbn: null
-  url: "https://www.oreilly.com/library/view/-/9780138172398/"
+  url: "https://www.oreilly.com/library/view/effective-python-125/9780138172398/"
   referenced_by:
     - "design-patterns-with-python"
 
@@ -1043,7 +1043,16 @@
   publisher: "Packt"
   year: 2025
   isbn: null
-  url: "https://www.oreilly.com/library/view/-/9781836642596/"
+  url: "https://www.oreilly.com/library/view/python-object-oriented-programming/9781836642596/"
+  referenced_by:
+    - "design-patterns-with-python"
+
+- title: "A Pattern Language: Towns, Buildings, Construction"
+  authors: "Christopher Alexander, Sara Ishikawa, Murray Silverstein"
+  publisher: "Oxford University Press"
+  year: 1977
+  isbn: null
+  url: "https://www.patternlanguage.com/"
   referenced_by:
     - "design-patterns-with-python"
 
