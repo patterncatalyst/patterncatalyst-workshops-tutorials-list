@@ -933,7 +933,6 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
-    - "design-patterns-with-python"
 
 - title: "Effective Java"
   authors: "Joshua Bloch"
@@ -964,7 +963,6 @@
   referenced_by:
     - "cpp-design-patterns"
     - "design-patterns-with-java"
-    - "design-patterns-with-python"
 
 - title: "Developing High-Frequency Trading Systems"
   authors: "Sebastien Donadio, Sourav Ghosh, Romain Rossier"
