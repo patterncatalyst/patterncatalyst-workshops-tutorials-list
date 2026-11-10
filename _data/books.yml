@@ -502,6 +502,7 @@
   referenced_by:
     - "cloud-native-design-patterns"
     - "api-patterns-and-practices-websockets"
+    - "event-driven-patterns-with-quarkus-and-camel"
 
 - title: "Cloud Native Patterns"
   authors: "Cornelia Davis"
@@ -596,6 +597,7 @@
     - "modernizing-enterprise-applications-python"
     - "enterprise-integration-patterns-with-camel"
     - "api-patterns-and-practices-websockets"
+    - "event-driven-patterns-with-quarkus-and-camel"
 
 - title: "Microservices Patterns"
   authors: "Chris Richardson"
@@ -1120,3 +1122,13 @@
   review_note: "Hand-added 2026-11-04 for design-patterns-with-python (its /bibliography/ page): second edition, February 2022, per the publisher page."
   referenced_by:
     - "design-patterns-with-python"
+
+- title: "Message- and Event-Driven Systems with CQRS and Event Sourcing: Web and Cloud Architecture"
+  authors: "Alex Lawrence"
+  publisher: "Addison-Wesley"
+  year: 2026
+  isbn: "9780137998616"
+  url: "https://www.informit.com/store/message-and-event-driven-systems-with-cqrs-and-event-9780137998616"
+  review_note: "Hand-added for event-driven-patterns-with-quarkus-and-camel (its Bibliography page); Vernon Signature Series; print ISBN and table of contents confirmed on the InformIT product page 2026-11-10."
+  referenced_by:
+    - "event-driven-patterns-with-quarkus-and-camel"
