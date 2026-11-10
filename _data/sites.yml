@@ -99,6 +99,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/enterprise-integration-patterns-with-camel/"
     repo_url: "https://github.com/patterncatalyst/enterprise-integration-patterns-with-camel"
 
+  - slug: "event-driven-patterns-with-quarkus-and-camel"
+    title: "Event-Driven Patterns with Quarkus and Camel"
+    group: "DDD & Integration"
+    synopsis: "Event-driven patterns in depth on Quarkus, Apache Camel and Kafka: outbox and Debezium, idempotent consumers, exactly-once, event sourcing, CQRS, sagas, observability with OpenTelemetry and LGTM, and Kafka on Kubernetes with Strimzi. Work in progress."
+    site_url: "https://patterncatalyst.github.io/event-driven-patterns-with-quarkus-and-camel/"
+    repo_url: "https://github.com/patterncatalyst/event-driven-patterns-with-quarkus-and-camel"
+
   - slug: "quarkus-optimization"
     title: "Taming the JVM · Quarkus"
     group: "Performance & Optimization"

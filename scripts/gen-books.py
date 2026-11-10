@@ -67,6 +67,7 @@ ALLOWED_REPOS = [
     "design-patterns-with-java",
     "design-patterns-with-python",
     "low-latency-engineering",
+    "event-driven-patterns-with-quarkus-and-camel",
 ]
 
 # Directory fragments that disqualify a path from being scanned, even
