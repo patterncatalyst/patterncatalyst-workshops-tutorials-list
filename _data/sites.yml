@@ -247,3 +247,10 @@ entries:
     synopsis: "A deployment-first, contract-first server-side WebAssembly course built around one WIT (Component Model) shipping-and-cargo contract: 29 chapters across 8 parts, every example in both Rust and Go against one WIT world, run on wasmtime and wasmCloud and deployed to Kubernetes on minikube and OpenShift Local, with CI validating the contract."
     site_url: "https://patterncatalyst.github.io/cn-patterns-and-practices-webassembly/"
     repo_url: "https://github.com/patterncatalyst/cn-patterns-and-practices-webassembly"
+
+  - slug: "api-patterns-and-practices-for-agents"
+    title: "API Patterns & Practices: APIs for Agents & LLMs"
+    group: "API Design"
+    synopsis: "A pattern catalog for building APIs that AI agents and LLMs consume: intent-shaped REST and GraphQL reshaped as MCP tools, event-driven patterns for waking agents on Kafka, human-in-the-loop gates, testing with deterministic replay, and production identity, traffic and observability guardrails, composed into a final multi-domain data mesh of agent-facing data products. Built on Quarkus, Apache Camel, Kafka, Keycloak and langchain4j, with every pattern stated stack-neutrally so an agent can rebuild it in another stack."
+    site_url: "https://patterncatalyst.github.io/api-patterns-and-practices-for-agents/"
+    repo_url: "https://github.com/patterncatalyst/api-patterns-and-practices-for-agents"
