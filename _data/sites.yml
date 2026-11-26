@@ -127,6 +127,13 @@ entries:
     site_url: "https://patterncatalyst.github.io/cpp-container-optimization-tutorial/"
     repo_url: "https://github.com/patterncatalyst/cpp-container-optimization-tutorial"
 
+  - slug: "latency-patterns-in-cpp"
+    title: "Latency: A Practical Guide in C++"
+    group: "Performance & Optimization"
+    synopsis: "A pattern-per-chapter guide to latency engineering in C++23, measured on a parcel sortation line: distributions over means, the latency budget, eliminating work, zero-copy layout, wait-free synchronization, concurrency, caching, shard-per-core partitioning, and off-path async, with a Rust comparison lane where ownership changes the design."
+    site_url: "https://patterncatalyst.github.io/latency-patterns-in-cpp/"
+    repo_url: "https://github.com/patterncatalyst/latency-patterns-in-cpp"
+
   - slug: "cpp-statelessness"
     title: "Stateless C++ Services"
     group: "C++ Programming"
